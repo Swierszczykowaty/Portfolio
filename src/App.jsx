@@ -1,13 +1,15 @@
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import About from "./components/About";
+
+
 const App = () => {
   return (
-    <>
-    <div className='w-full h-screen overflow-hidden'>
-      <h1 className=" text-6xl font-bold mt-8 text-text flex justify-center hover:text-accent duration-500 hover:scale-125 ">
-        Portfolio
-      </h1>
-    </div>
- 
-    </>
+    <BrowserRouter>
+      <div>
+        <About />
+      </div>
+    </BrowserRouter>
   )
 }
 
