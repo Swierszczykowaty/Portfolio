@@ -12,6 +12,7 @@ export default {
         current: 'currentColor',
         'white': '#ffffff',
         'bg': '#121422',
+        'background': '#121422',
         'text': '#dbe0f8',
         'primary': '#858ee6',
         'seconary': '#4c1e91',

@@ -5,9 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background-color: #121422;
-}
 * {
   margin: 0;
   padding: 0;
