@@ -22,7 +22,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className={`${styles.heroSubText} w-max text-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] block-effect`}style={{ '--td': '0.8s' }}>
-          <div className="block-reveal" style={{ '--bc': '#804dee', '--d': '.1s' }}>
+          <div className="block-reveal" style={{ '--bc': '#EDE34C', '--d': '.1s' }}>
             student, designer & creator 
           </div>
           </p>

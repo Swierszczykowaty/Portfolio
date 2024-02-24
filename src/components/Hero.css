@@ -256,7 +256,7 @@ p {
   }
 
   100% {
-    transform: translateX(100%) translateY(100%); /* Dodano translateY(1px) */
+    transform: translateX(101%) translateY(0); /* Dodano translateY(1px) */
   }
 }
 
