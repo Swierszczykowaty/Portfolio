@@ -181,7 +181,7 @@
 
 
 
-  *,
+*,
 *::before,
 *::after {
   margin: 0;
@@ -259,11 +259,26 @@ p {
     transform: translateX(101%) translateY(0); /* Dodano translateY(1px) */
   }
 }
-
 .abs-site-link {
   position: fixed;
   bottom: 20px;
   left: 20px;
   color: hsla(0, 0%, 0%, .6);
   font-size: 16px;
+}
+.element {
+  color: transparent;
+  animation: fadeInColor 0.1s forwards; 
+  animation-delay: 1000ms;
+
+}
+
+
+@keyframes fadeInColor {
+  0% {
+    color: transparent; 
+  }
+  100% {
+    color: #EDE34C; 
+  }
 }
