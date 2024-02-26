@@ -35,13 +35,13 @@ const Hero = () => {
             </p>
           </div>
           
-          <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none">
+          <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
             <a href="#about">
               <motion.div className="flex flex-col items-center border-none tracking-wider"
               initial="hidden"
               animate="show"
               variants={fadeIn("up", "tween", 1.6, 1.1)}>
-                SCROLL DOWN
+                <h6 className="hover-3">SCROLL DOWN</h6>
                 <motion.div
                 animate={{
                   y:[0,10,0]
@@ -54,7 +54,7 @@ const Hero = () => {
                   repeatType: 'loop',
                   repeatDelay: 1.5,
                 }}>
-                  <FaLongArrowAltDown className="sm:w-8 sm:h-8 w-7 h-7 text-primary2 border-none group-hover:scale-125 duration-700"/>
+                  <FaLongArrowAltDown className="sm:w-8 sm:h-8 w-7 h-7 mt-2 text-primary2 border-none group-hover:scale-125 duration-700"/>
                 </motion.div>
               </motion.div>
             </a>
