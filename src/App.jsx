@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-
+import Contact from "./components/Contact";
 
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
           <Navbar/>
           <Hero/>
           <About/>
+          <Contact/>
 
       </div>
     </BrowserRouter>

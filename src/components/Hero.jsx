@@ -20,8 +20,8 @@ const Hero = () => {
             <div className="w-3 h-3 bg-[#804dee] rounded-full p-3 "></div>
             <div className="w-1 sm:h-96 h-40 violet-gradient"></div>
           </div>
-          <div className="tracking-wider">
-            <h1 className= {`${styles.heroHeadText} text-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}style={{ '--td': '0.8s' }}>
+          <div className="tracking-wider ">
+            <h1 className= {`${styles.heroHeadText}  text-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}style={{ '--td': '0.8s' }}>
             <div className="block-reveal" style={{ '--bc': '#EDE34C', '--d': '.1s' }}>
               Hi, I'm <span className="element  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
                 Michał Świercz
@@ -34,7 +34,6 @@ const Hero = () => {
               </div>
             </p>
           </div>
-          
           <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
             <a href="#about">
               <motion.div className="flex flex-col items-center border-none tracking-wider"
@@ -50,7 +49,7 @@ const Hero = () => {
                   type:"tween",
                   delay: 3,
                   duration: 2,
-                  repeat:Infinity,
+                  repeat: Infinity,
                   repeatType: 'loop',
                   repeatDelay: 1.5,
                 }}>

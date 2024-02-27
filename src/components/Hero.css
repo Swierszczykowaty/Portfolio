@@ -261,9 +261,8 @@ p {
 }
 /*hover main animation*/
 .hover-3 {
-  --b: 0.1em;   /* the thickness of the line */
-  --c: #EDE34C; /* the color */
-  
+  --b: 0.1em;   
+  --c: #EDE34C; 
   color: #f4f4f400;
   padding-block: var(--b);
   background: 
