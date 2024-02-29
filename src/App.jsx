@@ -4,7 +4,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-
+import Photography from "./components/Photography";
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
           <Navbar/>
           <Hero/>
           <About/>
+          <Photography/>
           <Contact/>
 
       </div>

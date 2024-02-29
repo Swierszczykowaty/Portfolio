@@ -2,10 +2,9 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="w-full h-[1000px] bg-slate-800" >
-      contact
-    </div>
-
+      <div className="h-screen mb-[-189px] bg-slate-900 flex" >
+        contact
+      </div>
     </>
   );
 };
