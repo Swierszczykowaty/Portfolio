@@ -1,92 +1,42 @@
 
 import './Photography.css';
-const track = document.getElementById("image-track");
-
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = "0";  
-  track.dataset.prevPercentage = track.dataset.percentage;
-}
-
-const handleOnMove = e => {
-  if(track.dataset.mouseDownAt === "0") return;
-  
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-  
-  const percentage = (mouseDelta / maxDelta) * -100,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-  
-  track.dataset.percentage = nextPercentage;
-  
-  track.animate({
-    transform: `translate(${nextPercentage}%, -50%)`
-  }, { duration: 1200, fill: "forwards" });
-  
-  for(const image of track.getElementsByClassName("image")) {
-    image.animate({
-      objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" });
-  }
-}
-
-/* -- Had to add extra lines for touch events -- */
-
-window.onmousedown = e => handleOnDown(e);
-
-window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-window.onmouseup = e => handleOnUp(e);
-
-window.ontouchend = e => handleOnUp(e.touches[0]);
-
-window.onmousemove = e => handleOnMove(e);
-
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { services } from "../constans";
+import { fadeIn, textVariant } from "../untils/motion";
+import { SectionWrapper } from "../hoc";
 const Photography = () => {
   return (
-<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <>
+    <div className="flex flex-col h-screen mb-[-189px]">
 
-      <img
-        className="image w-40vmin h-56vmin object-cover"
-        src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="photograph"
-        draggable="false"
-      />
-            <img
-        className="image w-40vmin h-56vmin object-cover"
-        src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="photograph"
-        draggable="false"
-      />
-            <img
-        className="image w-40vmin h-56vmin object-cover"
-        src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="photograph"
-        draggable="false"
-      />
-            <img
-        className="image w-40vmin h-56vmin object-cover"
-        src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="photograph"
-        draggable="false"
-      />
-            <img
-        className="image w-40vmin h-56vmin object-cover"
-        src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="photograph"
-        draggable="false"
-      />
-            <img
-        className="image w-40vmin h-56vmin object-cover"
-        src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="photograph"
-        draggable="false"
-      />
+      
+      <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>
+          Photography
+        </h2>
+      </motion.div>
+      <motion.p variants={fadeIn("","",0.1,1)}
+      className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img
+           className="image w-40vmin h-56vmin object-cover"
+          src="public/photos/DSC_1657.JPG"
+          alt="photograph"
+          draggable="false"
+        />
+                <img
+           className="image w-40vmin h-56vmin object-cover"
+          src="public/photos/DSC_2192.JPG"
+          alt="photograph"
+          draggable="false"
+        />
+      </div>
+      </motion.p>
     </div>
+    </>
   );
 };
 
-export default Photography;
+export default SectionWrapper(Photography, "photography");
