@@ -11,7 +11,7 @@ const About = () => {
     <>
     <div className="flex flex-col h-screen mb-[-189px]">
       <motion.div variants={textVariant()}>
-        <p className={`{styles.sectionSubText} text-[#EDE34C]`}>
+        <p className={styles.sectionSubText}>
           Introduction
         </p>
         <h2 className={styles.sectionHeadText}>

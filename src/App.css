@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth; 
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
