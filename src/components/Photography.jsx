@@ -18,53 +18,161 @@ const Photography = () => {
       className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
         <div className='flex tag-list'>
-          <div className='loop-slider' style={{ '--duration': '7000ms', '--direction': 'normal' }}>
+          <div className='loop-slider' style={{ '--duration': '20000ms', '--direction': 'normal' }}>
             <div className='inner'>
               <img
-                className="image object-cover"
+                className="image "
                 src="src/photos/DSC_1657.JPG"
                 alt="photograph"
                 draggable="false"
               />
               <img
-                className="image object-cover"
+                className="image "
                 src="src/photos/DSC_2192.JPG"
                 alt="photograph"
                 draggable="false"
               />
               <img
-                className="image object-cover"
+                className="image r"
                 src="src/photos/IMG_7446.JPG"
                 alt="photograph"
                 draggable="false"
               />
               <img
-                className="image object-cover"
+                className="image objct-cover"
                 src="src/photos/IMG_7634.JPG"
                 alt="photograph"
                 draggable="false"
               />
 
               <img
-                className="image object-cover"
+                className="image objet-cover"
                 src="src/photos/DSC_1657.JPG"
                 alt="photograph"
                 draggable="false"
               />
               <img
-                className="image object-cover"
+                className="image objet-cover"
                 src="src/photos/DSC_2192.JPG"
                 alt="photograph"
                 draggable="false"
               />
               <img
-                className="image object-cover"
+                className="image objct-cover"
                 src="src/photos/IMG_7446.JPG"
                 alt="photograph"
                 draggable="false"
               />
               <img
-                className="image object-cover"
+                className="image objec-cover"
+                src="src/photos/IMG_7634.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="fade"></div>
+          <div className='loop-slider' style={{ '--duration': '20000ms', '--direction': 'reverse' }}>
+            <div className='inner'>
+              <img
+                className="image "
+                src="src/photos/DSC_1657.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image "
+                src="src/photos/DSC_2192.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image r"
+                src="src/photos/IMG_7446.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objct-cover"
+                src="src/photos/IMG_7634.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+
+              <img
+                className="image objet-cover"
+                src="src/photos/DSC_1657.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objet-cover"
+                src="src/photos/DSC_2192.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objct-cover"
+                src="src/photos/IMG_7446.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objec-cover"
+                src="src/photos/IMG_7634.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="fade"></div>
+          <div className='loop-slider' style={{ '--duration': '20000ms', '--direction': 'normal' }}>
+            <div className='inner'>
+              <img
+                className="image "
+                src="src/photos/DSC_1657.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image "
+                src="src/photos/DSC_2192.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image r"
+                src="src/photos/IMG_7446.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objct-cover"
+                src="src/photos/IMG_7634.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+
+              <img
+                className="image objet-cover"
+                src="src/photos/DSC_1657.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objet-cover"
+                src="src/photos/DSC_2192.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objct-cover"
+                src="src/photos/IMG_7446.JPG"
+                alt="photograph"
+                draggable="false"
+              />
+              <img
+                className="image objec-cover"
                 src="src/photos/IMG_7634.JPG"
                 alt="photograph"
                 draggable="false"

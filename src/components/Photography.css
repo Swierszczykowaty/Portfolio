@@ -1,56 +1,22 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #1e293b;
-  color: #f8fafc;
-}
-
-.app {
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-header { 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-  text-align: center;
-  
-  h1 {
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    
-    @media (min-width: 768px) {
-      font-size: 3rem;
-    }
-  }
-  
-  p {
-    color: #94a3b8;
-  }
-}
-
 .tag-list {
-  width: 30rem;
+  width:50vw ;
   max-width: 90vw;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  gap: 1rem 0;
   position: relative;
-  padding: 1.5rem 0;
   overflow: hidden;
+  object-fit: cover;
+  
 }
 
 .loop-slider {
+  padding: 10px 0;
   .inner {
+    height: 200px;
+    max-height:100%; max-width:100%;
     display: flex;
-    width: fit-content;
+    width: fit-content;    
     animation-name: loop;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -59,30 +25,14 @@ header {
   }
 }
 
-.tag {
-  display: flex;
-  align-items: center;
-  gap: 0 0.2rem;
-  color: #e2e8f0;
-  font-size: 0.9rem;
-  background-color: #334155;
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  margin-right: 1rem; 
-  box-shadow: 
-    0 0.1rem 0.2rem rgb(0 0 0 / 20%),
-    0 0.1rem 0.5rem rgb(0 0 0 / 30%),
-    0 0.2rem 1.5rem rgb(0 0 0 / 40%);
-  
-  span {
-    font-size: 1.2rem;
-    color: #64748b;
-  }
+.image {
+  max-width: 100%;
+  height: auto;
 }
 
 .fade {
   pointer-events: none;
-  background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+  background: linear-gradient(90deg, #121422, transparent 20%, transparent 80%, #121422);
   position: absolute;
   inset: 0;
 }
@@ -92,6 +42,6 @@ header {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-125%);
   }
 }
