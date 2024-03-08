@@ -12,20 +12,18 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-background ">
-        
           <Navbar/>
           <section>
-  
-          <Hero/>
+            <Hero/>
           </section>
           <section>
-          <About/>
+            <About/>
           </section>
           <section>
-          <Photography/>
+            <Photography/>
           </section>
           <section>
-          <Contact/>
+            <Contact/>
           </section>
       </div>
     </BrowserRouter>
