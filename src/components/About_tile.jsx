@@ -8,14 +8,14 @@ const About_tile = ({index,title,icon}) => {
     <>
     <Tilt classNme="xs:w-[250px] w-full">
         <motion.div variants={fadeIn("right","spring",0.5 * index , 0.75)}
-        className="w-full">
+        className="w-full green-pink-gradient p-1 rounded-2xl shadow-card">
             <div options={{
                 max:45,
                 scale:1,
                 speed:450
             }}
-            className="bg-slate-700 rounded-xl py-5 px-12 min-h-[280px]">
-
+            className="bg-slate-800 rounded-xl py-5 px-12 min-h-[280px] ">
+              <img src={icon} alt={title} />
             </div>
 
         </motion.div>

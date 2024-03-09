@@ -7,6 +7,14 @@ import { fadeIn, textVariant } from "../untils/motion";
 import { SectionWrapper } from "../hoc";
 import About_tile from "./About_tile";
 
+const ServiceCard = ({index,title,icon}) =>{
+  return(
+    <div>
+      {title}
+    </div>
+  )
+}
+
 const About = () => {
   return (
     <>
@@ -23,7 +31,15 @@ const About = () => {
       className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
       </motion.p>
+      <div className="flex flex-wrap gap-10">
+        {services.map((service,index) =>(
+          <ServiceCard key={service.title} index={index} {...service}/>
+        ))}
         <About_tile/>  
+        <About_tile/>  
+        <About_tile/>  
+        <About_tile/>  
+        </div>
     </div>
     </>
   );
