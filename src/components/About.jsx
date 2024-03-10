@@ -1,5 +1,6 @@
 import React from "react";
-import { Tilt } from "react-tilt";
+import './About.css'
+import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constans";
@@ -9,22 +10,23 @@ import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({index,title,icon}) =>{
   return(
-    <Tilt  options={{
-      max:40,
-      perspective: 500,
-      speed: 2000
-  }}
-    classNme="xs:w-[250px] w-full">
+    <Tilt
+    perspective={400}
+    glareEnable={true}
+    glareMaxOpacity={0.25}
+    glarePosition="all"
+    glareBorderRadius="16px"
+    glareColor="#8569a7"
+    transitionSpeed={700}
+    
+    className="para">
         <motion.div variants={fadeIn("right","spring",0.5 * index , 0.75)}
-        className="w-[220px] yellow-purple-gradient p-1 rounded-2xl shadow-card">
-            <div
-            className="bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly">
-              <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-              <h3 className="text-text text-xl font-bold text-center">{title}</h3>
+        className="para w-[220px] yellow-purple-gradient p-1 rounded-2xl shadow-cardd">
+            <div className="para bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly">
+              <img src={icon} alt={title} className="inn w-16 h-16 object-contain" />
+              <h3 className="inn text-text text-xl font-bold text-center">{title}</h3>
             </div>
-
         </motion.div>
-        
     </Tilt>
   )
 }
@@ -45,12 +47,27 @@ const About = () => {
       className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
         Lorem ipsum dolor, sit amdolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing eliet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
       </motion.p>
-      <div className="flex flex-wrap gap-14 mt-20 justify-center">
+      <div className="flex flex-wrap gap-14 mt-20 justify-center ">
         {services.map((service,index) =>(
           <ServiceCard key={service.title} index={index} {...service}/>
         ))}
+        </div> 
+        {/* <Tilt className="bg-black h-40 flex items-center justify-center para">
+          <motion.div className="size-16 bg-white  inn w-[220px] yellow-purple-gradient p-1 rounded-2xl shadow-cardd">
+            <div className="size-10 bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly inn">
+            <img src="src/photos\/SC_1657.JPG" alt="gg" className=" w-16 h-16 object-contain" />
+              <h3 className=" text-text text-xl font-bold text-center">fhhf</h3>
+            </div>
+          </motion.div>
+        </Tilt> */}
+        {/* <div className="flex flex-wrap gap-14 mt-20 justify-center">
+        <About_c title={"aha"} icon={"src/photos/DSC_1657.JPG"}> </About_c> 
 
-        </div>
+        <About_c title={"avbfa"} icon={"src/photos/DSC_1657.JPG"}> </About_c> 
+
+        <About_c title={"aaasd"} icon={"src/photos/DSC_1657.JPG"}> </About_c> 
+        <About_c title={"aasdaa"} icon={"src/photos/DSC_1657.JPG"}> </About_c> 
+        </div> */}
     </div>
     </>
   );
