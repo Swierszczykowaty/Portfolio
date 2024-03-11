@@ -9,5 +9,16 @@
 }
 .inn{
     transform: translateZ(70px);
-
-}
+    color: transparent;
+    animation: faadeInColor 0.1s forwards; 
+    animation-delay: 2000ms;
+  
+  }
+   @keyframes faadeInColor {
+    0% {
+      color: transparent; 
+    }
+    100% {
+      color: #ffffff; 
+    }
+  } 
