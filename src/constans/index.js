@@ -23,9 +23,10 @@ import {
     jobit,
     tripguide,
     threejs,
-    close,
-
-    
+    design,
+    web_dev,
+    photo,
+    movie,
   } from "../assets";
   
   export const navLinks = [
@@ -47,20 +48,22 @@ import {
   const services = [
     {
       title: "Graphic Designer",
-      icon: close,
+      icon: design,
     },
     {
       title: "Web Developer",
-      icon: close,
+      icon: web_dev,
     },
     {
       title: "Photographer",
-      icon: web,
+      icon: photo,
     },
     {
       title: "Movie Creator",
-      icon: web,
+      icon: movie,
     },
+
+
     
   ];
   

@@ -19,11 +19,12 @@ const ServiceCard = ({index,title,icon}) =>{
     transitionSpeed={700}
     
     className="para">
-      <motion.div variants={fadeIn("right","spring",0.5 * index , 0.75)}
-      className="para w-[220px] yellow-purple-gradient p-1 rounded-2xl shadow-cardd">
-        <div className="para bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly">
-          <motion.img src={icon} alt={title} className="inn w-16 h-16 object-contain" />
-          <motion.h3  transition={{ delay: 1 }} className="inn text-text text-xl font-bold text-center">{title}</motion.h3>            </div>
+      <motion.div 
+        className="para w-[220px] yellow-purple-gradient p-1 rounded-2xl shadow-cardd">
+        <div className="para bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[180px] h-[280px] flex flex-col items-center justify-evenly">
+          <motion.img src={icon} alt={title} className="opacity-0 inn w-14 h-14 object-contain " />
+          <motion.h3 className="inn opacity-0 text-text text-xl font-bold text-center">{title}</motion.h3> 
+        </div>
       </motion.div>
     </Tilt>
   )
@@ -32,7 +33,7 @@ const ServiceCard = ({index,title,icon}) =>{
 const About = () => {
   return (
     <>
-    <div className="flex flex-col h-screen mt-10 ">
+    <div className="flex flex-col h-screen mt-10 overflow-hidden">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           Introduction
@@ -43,9 +44,10 @@ const About = () => {
       </motion.div>
       <motion.p variants={fadeIn("","",0.3,1)}
       className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-        Lorem ipsum dolor, sit amdolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing elidolor, sit amet consectetur adipisicing eliet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
+        Jestem studentem II roku Informatyki. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore aspernatur commodi non aliquid! Adipisci quaerat aliquid iste dicta accusantium aut aperiam obcaecati, iusto asperiores nemo nam impedit, illum in?
+        
       </motion.p>
-      <div className="flex flex-wrap gap-14 mt-20 justify-center ">
+      <div className=" flex flex-wrap gap-10 mt-20 justify-center ">
         {services.map((service,index) =>(
           <ServiceCard key={service.title} index={index} {...service}/>
         ))}

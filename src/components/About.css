@@ -1,24 +1,24 @@
-
 .shadow-cardd {
-    --tw-shadow: 10px 35px 70px 0px #331e4c;
-    --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: 10px 35px 70px 0px #331e4c;
+  --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.para{
-    transform-style: preserve-3d;
+.para {
+  transform-style: preserve-3d;
 }
-.inn{
-    transform: translateZ(70px);
-    color: transparent;
-    animation: faadeInColor 0.1s forwards; 
-    animation-delay: 2000ms;
-  
+.inn {
+  color: transparent;
+  animation: fadeInColor2 3s forwards; 
+  animation-delay: 1s;
+}
+
+@keyframes fadeInColor2 {
+  0% {
+      opacity: 0; 
+      transform: translateZ(0);
   }
-   @keyframes faadeInColor {
-    0% {
-      color: transparent; 
-    }
-    100% {
-      color: #ffffff; 
-    }
-  } 
+  100% {
+      opacity: 1; 
+      transform: translateZ(70px);
+  }
+}
