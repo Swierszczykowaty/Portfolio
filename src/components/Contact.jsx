@@ -1,12 +1,14 @@
 import React from "react";
+import { SectionWrapper } from "../hoc";
 const Contact = () => {
   return (
     <>
-      <div className="h-screen mb-[-189px] bg-slate-900 flex" >
+      <div className="h-screen bg-slate-900 flex" >
         contact
       </div>
     </>
   );
 };
 
-export default Contact;
+
+export default SectionWrapper(Contact,"Contact");

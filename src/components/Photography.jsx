@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 const Photography = () => {
   return (
     <>
-    <div className="flex flex-col h-screen mb-[-189px]">
+    <div className="flex flex-col h-screen">
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>
           Photography
