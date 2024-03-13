@@ -10,9 +10,7 @@ const Hero = () => {
   return (
     <div className="relative z-0 overflow-hidden ">
       <div className="area">
-        <ul className="circles">
-        {[...Array(12)].map((_, index) => <li key={index}></li>)}
-        </ul>
+
       </div>
       <div className="flex flex-col">
         <div className= {`${styles.paddingX} justify-center mx-auto context w-full h-2/3 absolute top-1/3 flex flex-row gap-5`}>
@@ -34,7 +32,7 @@ const Hero = () => {
               </div>
             </p>
           </div>
-          <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
+          {/* <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
             <a href="#about">
               <motion.div className="flex flex-col items-center border-none tracking-wider"
               initial="hidden"
@@ -57,7 +55,7 @@ const Hero = () => {
                 </motion.div>
               </motion.div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
