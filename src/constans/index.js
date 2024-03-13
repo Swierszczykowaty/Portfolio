@@ -55,7 +55,7 @@ import {
       icon: web_dev,
     },
     {
-      title: "Photographer",
+      title: "Photography Enthusiastic",
       icon: photo,
     },
     {

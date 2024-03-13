@@ -16,7 +16,7 @@ const ServiceCard = ({index,title,icon}) =>{
     glarePosition="all"
     glareBorderRadius="16px"
     glareColor="#8569a7"
-    transitionSpeed={700}
+    transitionSpeed={1500}
     
     className="para">
       <motion.div 
@@ -33,7 +33,7 @@ const ServiceCard = ({index,title,icon}) =>{
 const About = () => {
   return (
     <>
-    <div className="flex flex-col h-screen mt-10 overflow-hidden">
+    <div className="flex flex-col h-full mt-10 ">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           Introduction
@@ -47,7 +47,7 @@ const About = () => {
         Jestem studentem II roku Informatyki. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore aspernatur commodi non aliquid! Adipisci quaerat aliquid iste dicta accusantium aut aperiam obcaecati, iusto asperiores nemo nam impedit, illum in?
         
       </motion.p>
-      <div className=" flex flex-wrap gap-10 mt-20 justify-center ">
+      <div className=" flex flex-wrap gap-20 mt-20 justify-center ">
         {services.map((service,index) =>(
           <ServiceCard key={service.title} index={index} {...service}/>
         ))}
