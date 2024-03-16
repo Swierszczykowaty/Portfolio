@@ -11,14 +11,14 @@ html, body {
     display: none;
   }
 /*scroll_hide*/
-/* section {
+ section {
     height: 100vh;
     scroll-snap-align: start;
 }
 
 html {
     scroll-snap-type: y mandatory;
-} */
+} 
 .grad{
     height: 500vh;
   
