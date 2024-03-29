@@ -17,7 +17,7 @@ import Blend from "./components/Blend";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-black ">
+      <div className="relative z-0 gradientbg ">
         <Navbar/>
         <Hero/>
         <div className="bg-background">
