@@ -33,7 +33,7 @@ const ServiceCard = ({index,title,icon}) =>{
 const About = () => {
   return (
     <>
-    <div className="flex flex-col h-full mb-10">
+    <div className="flex flex-col h-svh mt-4">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           Introduction
@@ -47,11 +47,11 @@ const About = () => {
         Jestem studentem II roku Informatyki. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore aspernatur commodi non aliquid! Adipisci quaerat aliquid iste dicta accusantium aut aperiam obcaecati, iusto asperiores nemo nam impedit, illum in?
         
       </motion.p>
-      <div className=" flex flex-wrap gap-20 mt-20 justify-center ">
+      <div className="flex flex-wrap xs:gap-20 gap-10 mt-20 justify-center  ">
         {services.map((service,index) =>(
           <ServiceCard key={service.title} index={index} {...service}/>
         ))}
-        </div> 
+      </div> 
     </div>
     </>
   );

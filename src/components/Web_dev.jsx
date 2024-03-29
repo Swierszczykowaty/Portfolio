@@ -12,6 +12,14 @@ const Web_dev = () => {
                     Web Designer
                 </h2>
             </motion.div>
+            <motion.p variants={fadeIn("","",0.3,1)}
+            className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
+              Głównym projektem web dev było pndarium, a także frontendowy klon reddita
+            </motion.p>
+            <div className=" flex mt-20 justify-center ">
+              <img src="src\photos\reddit.png" alt="" />
+
+      </div> 
         </div>
     </>
   );
