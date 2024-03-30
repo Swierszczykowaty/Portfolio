@@ -1,0 +1,9 @@
+/* Web_dev.css */
+.img-magnifier-container {
+    position: relative;
+  }
+  
+  .img-magnifier-container .absolute {
+    background-color: transparent; /* Ustawienie tła na przezroczyste */
+  }
+  

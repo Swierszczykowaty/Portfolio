@@ -39,15 +39,15 @@ const Navbar = () => {
           <div className="sm:hidden flex flex-1 justify-end items-center">
             <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)} />
-            <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+            <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-seconary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
               <ul className="list-none flex flex-col justify-end items-start gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`${
                     active === link.title
-                    ? "text-white"
-                    : "text-gray-500"
+                    ? "text-primary2"
+                    : "text-text"
                   } font-poppins font-medium text-[16px] cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);
