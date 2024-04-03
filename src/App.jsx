@@ -26,7 +26,9 @@ const App = () => {
         <Web_dev/>
         <Pandas/>
         <Design/>
+        <div className="bg-background">
         <Photography/>
+        </div>
         <Movies/>
         <Blend/>
         <Contact/>
