@@ -1,13 +1,39 @@
 import './Photography.scss';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { services } from "../constans";
 import { fadeIn, textVariant } from "../untils/motion";
 import { SectionWrapper } from "../hoc";
+import { photography } from "../constans";
+
+
+const PhotoBox = ({index,photo,title,description}) =>{
+  return(
+      <div className='box'>
+      <div className='imgBx'>
+        <img
+        id="photo1"
+        className="image "
+        src={photo}
+        alt="photograph"
+        draggable="false"
+        />
+      </div>
+      <div className='content'>
+        <div>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+
+  )
+}
+
+
 const Photography = () => {
   return (
     <>
-    <div className="flex flex-col mb-16">
+    <div className="flex flex-col">
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>
           Photography
@@ -19,108 +45,10 @@ const Photography = () => {
       </motion.p>
       
         <motion.div variants={fadeIn("right","",0.4,1)} className='container'>
-          <div className='box'>
-            <div className='imgBx'>
-              <img
-              id="photo1"
-              className="image "
-              src="src/photos/DSC_1657.JPG"
-              alt="photograph"
-              draggable="false"
-              />
-            </div>
-            <div className='content'>
-              <div>
-                <h2>title</h2>
-                <p>opis</p>
-              </div>
-            </div>
-          </div>
-          <div className='box'>
-            <div className='imgBx'>
-              <img
-              id="photo1"
-              className="image "
-              src="src/photos/IMG_7634.JPG"
-              alt="photograph"
-              draggable="false"
-              />
-            </div>
-            <div className='content'>
-              <div>
-                <h2>title</h2>
-                <p>opis</p>
-              </div>
-            </div>
-          </div>
-          <div className='box'>
-            <div className='imgBx'>
-              <img
-              id="photo1"
-              className="image "
-              src="src/photos/IMG_7446.JPG"
-              alt="photograph"
-              draggable="false"
-              />
-            </div>
-            <div className='content'>
-              <div>
-                <h2>title</h2>
-                <p>opis</p>
-              </div>
-            </div>
-          </div>
-          <div className='box'>
-            <div className='imgBx'>
-              <img
-              id="photo1"
-              className="image "
-              src="src/photos/DSC_2192.JPG"
-              alt="photograph"
-              draggable="false"
-              />
-            </div>
-            <div className='content'>
-              <div>
-                <h2>title</h2>
-                <p>opis</p>
-              </div>
-            </div>
-          </div>
-          <div className='box'>
-            <div className='imgBx'>
-              <img
-              id="photo1"
-              className="image "
-              src="src/photos/DSC_2192.JPG"
-              alt="photograph"
-              draggable="false"
-              />
-            </div>
-            <div className='content'>
-              <div>
-                <h2>title</h2>
-                <p>opis</p>
-              </div>
-            </div>
-          </div>
-          <div className='box'>
-            <div className='imgBx'>
-              <img
-              id="photo1"
-              className="image "
-              src="src/photos/DSC_2192.JPG"
-              alt="photograph"
-              draggable="false"
-              />
-            </div>
-            <div className='content'>
-              <div>
-                <h2>title</h2>
-                <p>opis</p>
-              </div>
-            </div>
-          </div>
+        {photography.map((photography, index) => (
+          <PhotoBox key={photography.title} index={index} {...photography} />
+))}
+
          </motion.div>
          
     </div>

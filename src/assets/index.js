@@ -34,6 +34,13 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import F16 from './photos/DSC_1657.jpg';
+import Vitur from './photos/DSC_6387.jpg';
+import a3 from './photos/DSC_5140.jpg';
+import a4 from './photos/DSC_5205.jpg';
+import a5 from './photos/DSC_5579.jpg';
+import a6 from './photos/DSC_5245.jpg';
+
 export {
   logo,
   backend,
@@ -66,5 +73,11 @@ export {
   design,
   web_dev,
   photo,
-  movie
+  movie,
+  F16,
+  Vitur,
+  a3,
+  a4,
+  a5,
+  a6,
 };

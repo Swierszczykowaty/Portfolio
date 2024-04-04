@@ -20,7 +20,7 @@ const Web_dev = () => {
               Głównym projektem web dev było pndarium, a także frontendowy klon reddita
             </motion.p>
             <div className="flex mt-20 justify-center mx-auto">
-              <img src="src\photos\reddit.png" alt="reddit" className="max-h-[500px]" />
+              <img src="src\assets\reddit.png" alt="reddit" className="max-h-[500px]" />
             </div> 
         </div>
     </>

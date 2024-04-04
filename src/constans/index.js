@@ -1,72 +1,107 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    design,
-    web_dev,
-    photo,
-    movie,
-  } from "../assets";
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+  design,
+  web_dev,
+  photo,
+  movie,
+  F16,
+  Vitur,
+  a3,
+  a4,
+  a5,
+  a6,
+} from "../assets";
 
-  
-  const services = [
-    {
-      title: "Graphic Designer",
-      icon: design,
-    },
-    {
-      title: "Web Developer",
-      icon: web_dev,
-    },
-    {
-      title: "Photography Enthusiastic",
-      icon: photo,
-    },
-    {
-      title: "Movie Creator",
-      icon: movie,
-    },
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "Graphic Designer",
+    icon: design,
+  },
+  {
+    title: "Web Developer",
+    icon: web_dev,
+  },
+  {
+    title: "Photography Enthusiastic",
+    icon: photo,
+  },
+  {
+    title: "Movie Creator",
+    icon: movie,
+  },
+];
 
 
-    
-  ];
-  
+const photography = [
+  {
+    photo: F16,
+    title: "F-16",
+    description: "JNKFDANSIAINnsafnlsfnsonfsofeesuofnbesjkfuebujnefuoefeuffujefufujesfknujbsefkefbjnsefkjnfsejnksekbjnskjnesfbkjn",
+  },
+  {
+    photo: Vitur,
+    title: "Vitur",
+    description: "design",
+  },
+  {
+    photo: a3,
+    title: "Graphic Designer",
+    description: "design",
+  },
+  {
+    photo: a4,
+    title: "Graphic Designer",
+    description: "design",
+  },
+  {
+    photo: a5,
+    title: "Graphic Designer",
+    description: "design",
+  },
+  {
+    photo: a6,
+    title: "Graphic Designer",
+    description: "design",
+  },
+];
   const technologies = [
     {
       name: "HTML 5",
@@ -270,4 +305,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, photography, technologies, experiences, testimonials, projects };
