@@ -18,7 +18,7 @@ const Photography = () => {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
       </motion.p>
       
-        <motion.div variants={textVariant()} className='container'>
+        <motion.div variants={fadeIn("right","",0.4,1)} className='container'>
           <div className='box'>
             <div className='imgBx'>
               <img
