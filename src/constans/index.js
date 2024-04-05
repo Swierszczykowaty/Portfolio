@@ -27,12 +27,13 @@ import {
   web_dev,
   photo,
   movie,
-  F16,
-  Vitur,
-  a3,
-  a4,
-  a5,
-  a6,
+  plane,
+  vitur,
+  butterfly,
+  lasers,
+  skyscrapers,
+  thunder,
+  fountain,
 } from "../assets";
 
 export const navLinks = [
@@ -72,34 +73,46 @@ const services = [
 
 const photography = [
   {
-    photo: F16,
+    photo: plane,
     title: "F-16",
-    description: "JNKFDANSIAINnsafnlsfnsonfsofeesuofnbesjkfuebujnefuoefeuffujefufujesfknujbsefkefbjnsefkjnfsejnksekbjnskjnesfbkjn",
+    description: "JNKFDANSIAINns afnlsfnsonfsofeesuofnbes jkfuebujnefuoef euffuje fufujesfk nujbsefk ef bjnsefkjnfsejnksekbjnskjnes fbkjn",
+    date:"20-05-20"
   },
   {
-    photo: Vitur,
+    photo: vitur,
     title: "Vitur",
     description: "design",
+    date:"20-05-20"
   },
   {
-    photo: a3,
+    photo: butterfly,
     title: "Graphic Designer",
     description: "design",
+    date:"20-05-20"
   },
   {
-    photo: a4,
+    photo: lasers,
     title: "Graphic Designer",
     description: "design",
+    date:"20-05-20"
   },
   {
-    photo: a5,
+    photo: skyscrapers,
     title: "Graphic Designer",
     description: "design",
+    date:"20-05-20"
   },
   {
-    photo: a6,
+    photo: thunder,
     title: "Graphic Designer",
     description: "design",
+    date:"20-05-20"
+  },
+  {
+    photo: fountain,
+    title: "Graphic Designer",
+    description: "design",
+    date:"20-05-20"
   },
 ];
   const technologies = [

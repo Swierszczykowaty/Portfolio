@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './Photography.scss';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -5,17 +6,21 @@ import { fadeIn, textVariant } from "../untils/motion";
 import { SectionWrapper } from "../hoc";
 import { photography } from "../constans";
 
+const getRandomPhotos = (photos, count) => {
+  const shuffled = photos.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
 
-const PhotoBox = ({index,photo,title,description}) =>{
-  return(
-      <div className='box'>
+const PhotoBox = ({ photo, title, description, date }) => {
+  return (
+    <div className='box'>
+
       <div className='imgBx'>
         <img
-        id="photo1"
-        className="image "
-        src={photo}
-        alt="photograph"
-        draggable="false"
+          className="image"
+          src={photo}
+          alt="photograph"
+          draggable="false"
         />
       </div>
       <div className='content'>
@@ -24,35 +29,73 @@ const PhotoBox = ({index,photo,title,description}) =>{
           <p>{description}</p>
         </div>
       </div>
+      <div className='content2'>
+        <p>{date}</p>
+      </div>
+
     </div>
-
-  )
-}
-
+  );
+};
 
 const Photography = () => {
+  const [photos, setPhotos] = useState([]);
+  const [numOfPhotos, setNumOfPhotos] = useState(7);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 650){
+        setNumOfPhotos(1);
+      }else if(width < 770) { 
+        setNumOfPhotos(3); 
+      }
+      else if(width < 1024) { 
+        setNumOfPhotos(4); 
+      } else {
+        setNumOfPhotos(7); 
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize); 
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    setPhotos(getRandomPhotos(photography, numOfPhotos));
+  }, [numOfPhotos]);
+
+  const handleRandomizePhotos = () => {
+    setPhotos(getRandomPhotos(photography, numOfPhotos));
+  };
+
   return (
     <>
-    <div className="flex flex-col">
-      <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>
-          Photography
-        </h2>
-      </motion.div>
-      <motion.p variants={fadeIn("","",0.1,1)}
-      className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
-      </motion.p>
-      
-        <motion.div variants={fadeIn("right","",0.4,1)} className='container'>
-        {photography.map((photography, index) => (
-          <PhotoBox key={photography.title} index={index} {...photography} />
-))}
-
-         </motion.div>
-         
-    </div>
-  </>
+      <div className="flex flex-col ite">
+        <motion.div variants={textVariant()}>
+          <h2 className={styles.sectionHeadText}>
+            Photography
+          </h2>
+        </motion.div>
+        <motion.p variants={fadeIn("","",0.1,1)}
+          className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
+        </motion.p>
+        <div className='flex flex-col items-center'>
+          <motion.div variants={fadeIn("right","",0.4,1)} className='container'>
+            {photos.map((photo, index) => (
+              <PhotoBox key={index} {...photo} />
+            ))}
+          </motion.div>
+          <motion.div variants={fadeIn("right","",0.8,1)} className=''>
+            <button onClick={handleRandomizePhotos} className='text-primary2 bg-slate-800 px-6 p-2 mt-4 flex items-center justify-center rounded-xl z-10 hover:scale-110 duration-500'>show other photos!</button>
+          </motion.div>  
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -34,7 +34,7 @@ const Hero = () => {
               </div>
             </p>
           </div>
-          {/* <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
+          <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
             <a href="#about">
               <motion.div className="flex flex-col items-center border-none tracking-wider"
               initial="hidden"
@@ -57,7 +57,7 @@ const Hero = () => {
                 </motion.div>
               </motion.div>
             </a>
-          </div> */}
+          </div> 
         </div>
       </div>
     </div>
