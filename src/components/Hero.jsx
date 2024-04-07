@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className="relative z-0 overflow-hidden ">
       <div className="area">
-      <ul className="circles">
+        <ul className="circles">
         {[...Array(12)].map((_, index) => <li key={index}></li>)}
         </ul>
       </div>

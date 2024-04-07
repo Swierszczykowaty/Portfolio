@@ -19,8 +19,12 @@ const Web_dev = () => {
             className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
               Głównym projektem web dev było pndarium, a także frontendowy klon reddita
             </motion.p>
-            <div className="flex mt-20 justify-center mx-auto">
-              <img src="src\assets\reddit.png" alt="reddit" className="max-h-[500px]" />
+            <div className="flex flex-col mt-20 justify-center mx-auto gap-5">
+              <img src="src\assets\webdev\reddit.png" alt="reddit" className="" />
+              <img src="src\assets\webdev\GameTile.png" alt="reddit" className="" />
+              <img src="src\assets\webdev\Title.png" alt="reddit" className="" />
+              <img src="src\assets\webdev\Character Tile.png" alt="reddit" className="" />
+              <img src="src\assets\webdev\Ourpandas.png" alt="reddit" className="" />
             </div> 
         </div>
     </>

@@ -14,7 +14,6 @@ const getRandomPhotos = (photos, count) => {
 const PhotoBox = ({ photo, title, description, date }) => {
   return (
     <div className='box'>
-
       <div className='imgBx'>
         <img
           className="image"
@@ -90,8 +89,8 @@ const Photography = () => {
               <PhotoBox key={index} {...photo} />
             ))}
           </motion.div>
-          <motion.div variants={fadeIn("right","",0.8,1)} className=''>
-            <button onClick={handleRandomizePhotos} className='text-primary2 bg-slate-800 px-6 p-2 mt-4 flex items-center justify-center rounded-xl z-10 hover:scale-110 duration-500'>show other photos!</button>
+          <motion.div variants={fadeIn("right","",0.8,1)} className='button_photo'>
+            <button onClick={handleRandomizePhotos} className='text-primary2 bg-slate-800 px-6 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10 hover:scale-110 duration-500'>show other photos!</button>
           </motion.div>  
         </div>
       </div>
