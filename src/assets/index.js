@@ -34,6 +34,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import reddit from "./webdev/reddit.png";
+
 import plane from './photos/DSC_1657.jpg';
 import vitur from './photos/DSC_6387.jpg';
 import butterfly from './photos/DSC_5140.jpg';
@@ -71,11 +73,12 @@ export {
   carrent,
   jobit,
   tripguide,
-  design,
+  design,//icons about
   web_dev,
   photo,
   movie,
-  plane,
+  reddit,//webdev
+  plane,//photography
   vitur,
   butterfly,
   lasers,

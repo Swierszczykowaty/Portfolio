@@ -23,11 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
-  design,
+  design,//icons about
   web_dev,
   photo,
   movie,
-  plane,
+  reddit,//webdev
+  plane,//photography
   vitur,
   butterfly,
   lasers,
@@ -42,23 +43,23 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
+    id: "Web_dev",
     title: "Work",
   },
   {
-    id: "contact",
+    id: "Contact",
     title: "Contact",
   },
 ];
 
 const services = [
   {
-    title: "Graphic Designer",
-    icon: design,
-  },
-  {
     title: "Web Developer",
     icon: web_dev,
+  },
+  {
+    title: "Graphic Designer",
+    icon: design,
   },
   {
     title: "Photography Enthusiastic",
@@ -70,6 +71,18 @@ const services = [
   },
 ];
 
+const web_pages = [
+  {
+    photo: reddit,
+    title: "Reddit",
+    description: "design",
+  },
+  {
+    photo: reddit,
+    title: "Pandarium",
+    description: "design",
+  },
+];
 
 const photography = [
   {
@@ -318,4 +331,4 @@ const photography = [
     },
   ];
   
-  export { services, photography, technologies, experiences, testimonials, projects };
+  export { services, web_pages, photography, technologies, experiences, testimonials, projects };
