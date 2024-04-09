@@ -3,29 +3,35 @@ import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../untils/motion";
-import './Web_dev.css'
+import './Web_dev.scss'
 import { web_pages } from "../constans";
 
 const WebBox = ({ photo, title, description }) => {
   return (
-    <>
-      <div className=" web_box relative rounded-xl">
-        <div className=" image_box">
-          <img
+    <section>
+      <div className="row">
+        <div className="col-md-4 col-sm-6 col-xs-12">
+          <div className="card">
+            <div className="cover">
+            <img
             className="image"
             src={photo}
             alt="photograph"
             draggable="false"
           />
+              <h1>{title}</h1>
+              <div className="card-back">
+                <p> {description}</p>
+              </div>
+            </div>
           </div>
-          <div className="absolute left-0 bottom-0 m-4 text-black text-3xl ">
-            {title}
-        
         </div>
       </div>
-    </>
+    </section>
   );
 };
+
+    
 
 
 
