@@ -35,6 +35,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import reddit from "./webdev/reddit.png";
+import character_tile from "./webdev/character_tile.png";
 
 import plane from './photos/DSC_1657.jpg';
 import vitur from './photos/DSC_6387.jpg';
@@ -78,6 +79,7 @@ export {
   photo,
   movie,
   reddit,//webdev
+  character_tile,
   plane,//photography
   vitur,
   butterfly,

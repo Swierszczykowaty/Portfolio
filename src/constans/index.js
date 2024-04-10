@@ -28,6 +28,7 @@ import {
   photo,
   movie,
   reddit,//webdev
+  character_tile,
   plane,//photography
   vitur,
   butterfly,
@@ -78,7 +79,7 @@ const web_pages = [
     description: "designdesig ndesigndesigndesigndesignd esi gnde s i gn",
   },
   {
-    photo: reddit,
+    photo: character_tile,
     title: "Pandarium",
     description: "He's not alone anymore. Joker: Folie à Deux – only in theaters and @IMAX, October 4. #JokerMovie #FilmedForIMAX",
   },
