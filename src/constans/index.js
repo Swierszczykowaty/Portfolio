@@ -75,12 +75,12 @@ const web_pages = [
   {
     photo: reddit,
     title: "Reddit",
-    description: "design",
+    description: "designdesig ndesigndesigndesigndesignd esi gnde s i gn",
   },
   {
     photo: reddit,
     title: "Pandarium",
-    description: "design",
+    description: "He's not alone anymore. Joker: Folie à Deux – only in theaters and @IMAX, October 4. #JokerMovie #FilmedForIMAX",
   },
 ];
 

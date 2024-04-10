@@ -12,6 +12,11 @@ const styles = {
       "text-primary2 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
       "sm:text-[18px] text-[14px] text-text uppercase tracking-wider",
+    WebHeadText:
+      "text-white font-black md:text-[50px] sm:text-[40px] text-[30px]",
+    WebSubText:
+      "sm:text-[18px] text-[12px] text-text tracking-wider",
+
   };
   
   export { styles };
