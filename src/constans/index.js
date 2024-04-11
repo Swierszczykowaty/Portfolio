@@ -77,11 +77,13 @@ const web_pages = [
     photo: reddit,
     title: "Reddit",
     description: "designdesig ndesigndesigndesigndesignd esi gnde s i gn",
+    link:"https://github.com/Swierszczykowaty/Redit_clon"
   },
   {
     photo: character_tile,
     title: "Pandarium",
     description: "He's not alone anymore. Joker: Folie à Deux – only in theaters and @IMAX, October 4. #JokerMovie #FilmedForIMAX",
+    link:"https://github.com/Swierszczykowaty"
   },
 ];
 

@@ -24,7 +24,10 @@ const App = () => {
             <About/>
         </div>
         <Web_dev/>
+        <div className="bg-background">
         <Pandas/>
+        </div>
+        
         <Design/>
         <div className="bg-background">
         <Photography/>

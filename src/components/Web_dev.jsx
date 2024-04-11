@@ -5,12 +5,11 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../untils/motion";
 import './Web_dev.scss'
 import { web_pages } from "../constans";
+import {github} from "../assets"
 
-const WebBox = ({ photo, title, description }) => {
+const WebBox = ({ photo, title, description, link}) => {
   return (
-    <section>
-      <div className="">
-        <div className="col-md-4 col-sm-6 col-xs-12">
+      <>
           <div className="card">
             <div className="cover">
               <img
@@ -22,12 +21,13 @@ const WebBox = ({ photo, title, description }) => {
               <h1 className={styles.WebHeadText}>{title}</h1>
               <div className="card-back">
                 <p className={styles.WebSubText}> {description}</p>
+                <a href={link} target="_blank" rel="noopener noreferrer" draggable="false">
+                  <img src={github} alt="github" className="web_gitimg" draggable="false"/>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+      </>
   );
 };
 
@@ -48,7 +48,7 @@ const Web_dev = () => {
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
             Głównym projektem web dev było pndarium, a także frontendowy klon reddita
           </motion.p>
-          <div className='flex flex-wrap justify-center items-center gap-10 mt-20'>
+          <div className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
           {web_pages.map((photo, index) => (
               <WebBox key={index} {...photo} />
             ))}

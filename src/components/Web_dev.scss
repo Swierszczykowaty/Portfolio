@@ -7,21 +7,24 @@ $transition-time: 2.3s;
 	margin: 10px 0;
 	transition: ease all $transition-time;
 	perspective: 1200px;
-	
-	
+	border-radius: 20px;
 	&:hover{
 		.cover{
 			transform: rotateX(0deg) rotateY(-180deg);
+			
 			&:before{
 				transform: translateZ(50px);
 			}
 			&:after{
-				background-color: black;
+				background-color: rgb(32, 32, 32);
 			}
 			h1{
 				transform: translateZ(120px);
 			}
 			p{
+				transform: translateZ(-80px) rotatey(-180deg);
+			}
+			a{
 				transform: translateZ(-80px) rotatey(-180deg);
 			}
 		}
@@ -33,6 +36,8 @@ $transition-time: 2.3s;
 		width: 100%;
 		transform-style: preserve-3d;
   		transition: ease all $transition-time;
+		border-radius: 20px;
+
 		&:before{
 			content: '';
 			position: absolute;
@@ -46,6 +51,8 @@ $transition-time: 2.3s;
 			transition: ease all $transition-time;
 			transform-style: preserve-3d;
 			transform: translateZ(0px);
+			border-radius: 20px;
+
 		}
 		&:after{//shadow gray
 			content: '';
@@ -57,6 +64,8 @@ $transition-time: 2.3s;
 			z-index: 2;
 			transition: ease all 1.3s;
 			background: rgba(0,0,0,.4);
+			border-radius: 20px;
+
 		}
 		.photo{
 			height: 100%;
@@ -68,10 +77,11 @@ $transition-time: 2.3s;
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
+			border-radius: 20px;
 		}
 		h1{
 			position: absolute;
-			bottom: 55px;
+			bottom: 40px;
 			left: 50px;
 			transform-style: preserve-3d;
   			transition: ease all $transition-time;
@@ -85,13 +95,14 @@ $transition-time: 2.3s;
 		width: 100%;
 		top: 0;
 		left: 0;
-		background: rgb(18, 20, 34);
+		background: #121422;
 		transform-style: preserve-3d;
   		transition: ease all $transition-time;
 		transform: translateZ(-1px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-radius: 20px;
 		p{
 			transform-style: preserve-3d;
 			transition: ease transform $transition-time, ease background .5s;
@@ -117,8 +128,34 @@ $transition-time: 2.3s;
 			transition: ease all $transition-time;
 			transform-style: preserve-3d;
 			transform: translateZ(-40px);
+			border-radius: 20px;
+
+		}
+		a{
+			transform-style: preserve-3d;
+			transition: ease transform $transition-time, ease background .5s;
+			transform: translateZ(-1px) rotatey(-180deg);
+			height: 60px;
+			width: 60px;
+			position: absolute;
+			top: 5%;
+			left: 5%;
+			border-radius: 100%;
+			background: #121422;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}&:before{
+			z-index: 3;
+			transition: ease all $transition-time;
+			transform-style: preserve-3d;
+			transform: translateZ(-30px);
 		}
 	}
+	.card-back a:hover {
+		background: #323443;
+	  }
 }
 @media only screen and (max-width: 668px) {
 	.card{
