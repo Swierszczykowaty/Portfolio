@@ -163,3 +163,9 @@ $transition-time: 2.3s;
 	width: 358px;
 	}
   }
+  @media only screen and (max-width: 668px) {
+	.card .card-back a {
+	  height: 50px;
+	  width: 50px;
+	}
+}

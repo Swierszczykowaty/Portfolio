@@ -48,11 +48,11 @@ const Web_dev = () => {
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
             Głównym projektem web dev było pndarium, a także frontendowy klon reddita
           </motion.p>
-          <div className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
+          <motion.div variants={fadeIn("","",0.6,1)} className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
           {web_pages.map((photo, index) => (
               <WebBox key={index} {...photo} />
             ))}
-          </div>
+          </motion.div>
         </div>
     </>
   );

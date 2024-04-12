@@ -23,9 +23,12 @@ const App = () => {
         <div className="bg-background">
             <About/>
         </div>
-        <Web_dev/>
-        <div className="bg-background">
-        <Pandas/>
+        <div className="webdevv_container">
+          <div className="webdevv"></div>
+          <Web_dev/>
+        </div>
+        <div class="">
+          <Pandas/>
         </div>
         
         <Design/>

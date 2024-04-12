@@ -37,6 +37,8 @@ import tripguide from "./tripguide.png";
 import reddit from "./webdev/reddit.png";
 import character_tile from "./webdev/character_tile.png";
 
+import cat from './pandas/cat-body.png';
+
 import plane from './photos/DSC_1657.jpg';
 import vitur from './photos/DSC_6387.jpg';
 import butterfly from './photos/DSC_5140.jpg';
@@ -80,6 +82,7 @@ export {
   movie,
   reddit,//webdev
   character_tile,
+  cat,//pandas
   plane,//photography
   vitur,
   butterfly,

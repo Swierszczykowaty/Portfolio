@@ -29,6 +29,7 @@ import {
   movie,
   reddit,//webdev
   character_tile,
+  cat,//pandas
   plane,//photography
   vitur,
   butterfly,
@@ -86,7 +87,14 @@ const web_pages = [
     link:"https://github.com/Swierszczykowaty"
   },
 ];
-
+const pandas = [
+  {
+    body: cat,
+  },
+  {
+    body: cat,
+  },
+];
 const photography = [
   {
     photo: plane,
@@ -267,7 +275,7 @@ const photography = [
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+ 
   const projects = [
     {
       name: "Car Rent",
@@ -334,4 +342,4 @@ const photography = [
     },
   ];
   
-  export { services, web_pages, photography, technologies, experiences, testimonials, projects };
+  export { services, web_pages, pandas, photography, technologies, experiences, testimonials, projects };

@@ -19,8 +19,22 @@ html, body {
 html {
     scroll-snap-type: y mandatory;
 } 
+/* webdev */
+.webdevv_container{
+  position: relative;
 
-
+}
+.webdevv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('src/assets/webdev/character_tile.png');
+  background: linear-gradient(#1214228c, #121422f2),
+              url('src/assets/webdev/character_tile.png');
+              filter: blur(2px); 
+}
 
 
 
