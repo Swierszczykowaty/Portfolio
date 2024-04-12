@@ -30,6 +30,15 @@ import {
   reddit,//webdev
   character_tile,
   cat,//pandas
+  bunny,
+  bear,
+  cow,
+  elephant,
+  frog,
+  giraffe,
+  lion,
+  monkey,
+  sheep,
   plane,//photography
   vitur,
   butterfly,
@@ -89,11 +98,55 @@ const web_pages = [
 ];
 const pandas = [
   {
-    body: cat,
+    title: "Bunny",
+    body: bunny,
+    color: "#8FB5B3"
   },
   {
-    body: cat,
+    title: "Bear",
+    body: bear,
+    color: "#7F664C"
   },
+  {
+    title: "Cat",
+    body: cat,
+    color: "#C9BFA4"
+  },
+  {
+    title: "Cow",
+    body: cow,
+    color: "#D4B8D0"
+  },
+  {
+    title: "Elephant",
+    body: elephant,
+    color: "#ECECEC"
+  },
+  {
+    title: "Frog",
+    body: frog,
+    color: "#93A26D"
+  },
+  {
+    title: "Giraffe",
+    body: giraffe,
+    color: "#A8946F"
+  },
+  {
+    title: "Sheep",
+    body: sheep,
+    color: "#91B6BE"
+  },
+  {
+    title: "Lion",
+    body: lion,
+    color: "#A88D6D"
+  },
+  {
+    title: "Monkey",
+    body: monkey,
+    color: "#7D624B"
+  },  
 ];
 const photography = [
   {

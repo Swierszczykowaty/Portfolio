@@ -31,10 +31,6 @@ const WebBox = ({ photo, title, description, link}) => {
   );
 };
 
-    
-
-
-
 const Web_dev = () => {
   return (
     <>

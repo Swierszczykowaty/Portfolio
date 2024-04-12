@@ -38,6 +38,16 @@ import reddit from "./webdev/reddit.png";
 import character_tile from "./webdev/character_tile.png";
 
 import cat from './pandas/cat-body.png';
+import bunny from './pandas/bunny-body.png';
+import bear from './pandas/bear-body.png';
+import cow from './pandas/cow-body.png';
+import elephant from './pandas/elephant-body.png';
+import frog from './pandas/frog-body.png';
+import giraffe from './pandas/giraffe-body.png';
+import lion from './pandas/lion-body.png';
+import monkey from './pandas/monkey-body.png';
+import sheep from './pandas/sheep-body.png';
+
 
 import plane from './photos/DSC_1657.jpg';
 import vitur from './photos/DSC_6387.jpg';
@@ -83,6 +93,15 @@ export {
   reddit,//webdev
   character_tile,
   cat,//pandas
+  bunny,
+  bear,
+  cow,
+  elephant,
+  frog,
+  giraffe,
+  lion,
+  monkey,
+  sheep,
   plane,//photography
   vitur,
   butterfly,

@@ -27,12 +27,11 @@ const App = () => {
           <div className="webdevv"></div>
           <Web_dev/>
         </div>
-        <div class="">
+        <div class="bg-background">
           <Pandas/>
         </div>
-        
-        <Design/>
-        <div className="bg-background">
+        {/* <Design/> */}
+        <div className="">
         <Photography/>
         </div>
         <Movies/>
