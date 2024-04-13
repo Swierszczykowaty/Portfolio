@@ -1,12 +1,9 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import design from "./design.png";
+
+import design from "./design.png";//about
 import web_dev from "./web_dev.png";
 import photo from "./photo.png";
 import movie from "./movie.png";
@@ -25,15 +22,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 import reddit from "./webdev/reddit.png";
 import character_tile from "./webdev/character_tile.png";
 
@@ -48,6 +36,10 @@ import lion from './pandas/lion-body.png';
 import monkey from './pandas/monkey-body.png';
 import sheep from './pandas/sheep-body.png';
 
+import hortensja from './okz/Hortensja.png'
+import dalia from './okz/ig-Dalia.png'
+import paz from './okz/Iphiclides podalirius.png'
+import blue from './okz/niebieskie.png'
 
 import plane from './photos/DSC_1657.jpg';
 import vitur from './photos/DSC_6387.jpg';
@@ -59,10 +51,6 @@ import fountain from './photos/DSC_2335.jpg';
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -79,13 +67,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   design,//icons about
   web_dev,
   photo,
@@ -102,6 +83,10 @@ export {
   lion,
   monkey,
   sheep,
+  hortensja,//okz
+  blue,
+  paz,
+  dalia,
   plane,//photography
   vitur,
   butterfly,
