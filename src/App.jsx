@@ -27,7 +27,7 @@ const App = () => {
           <div className="webdevv"></div>
           <Web_dev/>
         </div>
-        <div class="bg-background">
+        <div class="">
           <Pandas/>
         </div>
         {/* <Design/> */}

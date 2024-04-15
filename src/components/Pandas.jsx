@@ -9,7 +9,7 @@ import './Pandas.scss';
 const Pandaslide = ({title, body, color}) => {
   return(
     <div className="group relative">
-      <div className="w-56 h-56 mr-4 relative">
+      <div className="w-44 h-44 mr-4 relative">
         <div className="w-full h-full rounded-full absolute scale-50 opacity-70 blur-md group-hover:scale-100 duration-700 " style={{ backgroundColor: color }}></div>
         <img src={body} alt="panda" className="shrink-0 group-hover:scale-[1.15] duration-700 pandas" />
       </div>
@@ -31,8 +31,8 @@ const Pandas = () => {
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
             Robienie Pand svg do pandarium i innyc rzeczy
           </motion.p>
-          <motion.div variants={fadeIn("","",0.5,1)} class=" overflow-hidden w-full relative">
-            <div class="flex flex-row  mb-3 md:mb-4 xl:mb-5 mt-20 ">
+          <motion.div variants={fadeIn("","",0.5,1)} class="pb-4 overflow-hidden w-full relative">
+            <div class="flex flex-row mb-3 md:mb-4 xl:mb-5 mt-20  ">
               <div class="flex flex-row animate-slideLeft ">
                 {pandas.map((photo, index) =>(
                   <Pandaslide key={index} {...photo}/>
@@ -44,13 +44,16 @@ const Pandas = () => {
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-r from-background to-transparent md:w-[250px] w-[100px] h-full absolute bottom-0"></div>
-            <div className="bg-gradient-to-l from-background to-transparent md:w-[250px] w-[100px] h-full absolute bottom-0 right-0"></div>
+            {/* <div className="bg-gradient-to-r from-background to-transparent md:w-[250px] w-[100px] h-full absolute bottom-0"></div>
+            <div className="bg-gradient-to-l from-background to-transparent md:w-[250px] w-[100px] h-full absolute bottom-0 right-0"></div> */}
           </motion.div>
           <motion.p variants={fadeIn("","",0.7,1)}
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
             Miniaturki yt i instagram a takze inne prace graficzne
           </motion.p>
+          <div>
+            <img src="src\assets\okz\Hortensja.png" alt="" />
+          </div>
         </div>
       </>
   );
