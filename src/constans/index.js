@@ -158,6 +158,10 @@ const okz = [
     photo: hortensja,
     title: "Dalia",
   },
+  {
+    photo: hortensja,
+    title: "Dalia",
+  },
 ];
 const photography = [
   {

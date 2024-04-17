@@ -7,13 +7,43 @@
     }
 }
 .animate-slideLeft {
-    animation: slideLeft 33s linear infinite backwards;
+    animation: slideLeft 50s linear infinite backwards;
     
 }
-.paused {
-    animation-play-state: paused;
-  }
+.pandash{
+    box-shadow: -16px 0 48px #00000070;
+
+}
   .pandas{
     transform-style: preserve-3d;
     transform: translateZ(400px);
+  }
+  
+  .cardokz {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -16px 0 48px #000000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  .cardokz:not(:first-child) {
+      margin-left: -65px;
+
+  }
+  
+  .cardokz:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .cardokz:hover ~ .cardokz {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  .imageokz{
+    object-fit: cover;
   }
