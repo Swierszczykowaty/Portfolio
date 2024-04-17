@@ -101,14 +101,14 @@ const pandas = [
     color: "#7F664C"
   },
   {
-    title: "Cat",
-    body: cat,
-    color: "#C9BFA4"
-  },
-  {
     title: "Cow",
     body: cow,
     color: "#D4B8D0"
+  },
+  {
+    title: "Cat",
+    body: cat,
+    color: "#C9BFA4"
   },
   {
     title: "Elephant",

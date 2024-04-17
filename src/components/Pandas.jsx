@@ -9,7 +9,7 @@ import './Pandas.scss';
 const Okz =({title, photo}) => {
   return(
     <>
-      <div className="cardokz">
+      <div className="cardokz ">
           <img src={photo} alt="okz" className="imageokz rounded-xl duration-700 border-4 border-text" />
       </div>
     </>
@@ -54,14 +54,14 @@ const Pandas = () => {
                 ))}
               </div>
             </div>
-            {/* <div className="bg-gradient-to-r from-background to-transparent md:w-[250px] w-[100px] h-full absolute bottom-0"></div>
-            <div className="bg-gradient-to-l from-background to-transparent md:w-[250px] w-[100px] h-full absolute bottom-0 right-0"></div> */}
+            <div className="bg-gradient-to-r from-background to-transparent md:w-[200px] w-[100px] h-full absolute bottom-0"></div>
+            <div className="bg-gradient-to-l from-background to-transparent md:w-[200px] w-[100px] h-full absolute bottom-0 right-0"></div>
           </motion.div>
           <motion.p variants={fadeIn("","",0.7,1)}
           className="mt-4 mb-12 text-text text[17px] max-w-3xl leading-[40px]">
             Miniaturki yt i instagram a takze inne prace graficzne
           </motion.p>
-          <div className="flex">
+          <div className="flex ">
             {okz.map((photo,index) =>(
             <Okz key={index} {...photo}/>
             ))}
