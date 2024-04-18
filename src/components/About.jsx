@@ -20,8 +20,8 @@ const ServiceCard = ({index,title,icon}) =>{
     
     className="para">
       <motion.div 
-        className="para w-[220px] yellow-purple-gradient p-1 group rounded-2xl shadow-cardd">
-        <div className="para bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[180px] h-[280px] flex flex-col items-center justify-evenly duration-300 group-hover:bg-[#141324]">
+        className="para w-[200px] md:w-[220px]  md:h-auto yellow-purple-gradient p-1 group rounded-2xl shadow-cardd">
+        <div className="para bg-[#1B1A32] rounded-xl py-5 px-12 min-h-[160px] h-[220px] md:h-[280px] flex flex-col items-center justify-evenly duration-300 group-hover:bg-[#141324]">
           <motion.img src={icon} alt={title} className="opacity-0 inn w-14 h-14 object-contain " />
           <motion.h3  className="inn opacity-0 text-text text-xl font-bold text-center">{title}</motion.h3> 
         </div>

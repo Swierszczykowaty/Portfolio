@@ -20,7 +20,7 @@ const App = () => {
       <div className="relative z-0 gradientbg ">
         <Navbar/>
         <Hero/>
-        <div className="bg-background">
+        <div className="bg-gradient-to-t from-background from-80% to-transparent ">
             <About/>
         </div>
         <div className="webdevv_container">
@@ -30,13 +30,13 @@ const App = () => {
         <div class="bg-background">
           <Pandas/>
         </div>
-        {/* <Design/> */}
-        <div className="">
-        <Photography/>
+        <div className="bg-gradient-to-b from-background from-5% via-transparent to-transparent ">
+          <Photography/>
         </div>
+        {/* <Design/> */}
         {/* <Movies/>
-        <Blend/>
-        <Contact/> */}
+        <Blend/>*/}
+        <Contact/> 
       </div>
     </BrowserRouter>
   )

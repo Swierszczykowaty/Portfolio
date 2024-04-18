@@ -5,7 +5,6 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../untils/motion";
 import { SectionWrapper } from "../hoc";
 import { photography } from "../constans";
-
 const getRandomPhotos = (photos, count) => {
   const shuffled = photos.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
@@ -71,6 +70,7 @@ const Photography = () => {
     setPhotos(getRandomPhotos(photography, numOfPhotos));
   };
 
+
   return (
     <>
       <div className="flex flex-col ite">
@@ -90,7 +90,9 @@ const Photography = () => {
             ))}
           </motion.div>
           <motion.div variants={fadeIn("right","",0.8,1)} className='button_photo'>
-            <button onClick={handleRandomizePhotos} className='text-primary2 bg-slate-800 px-6 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10 hover:scale-110 duration-500'>show other photos!</button>
+            <button onClick={handleRandomizePhotos} className=' bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10 hover:scale-[1.30] hover:-rotate-[135deg] duration-700 bg-background'>
+              <img src="src\assets\dice.svg" alt="dice" className='h-12'/>
+            </button>
           </motion.div>  
         </div>
       </div>

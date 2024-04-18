@@ -27,11 +27,12 @@
   transition: 0.5s;
   transform-style: preserve-3d;
   overflow:hidden;
-  margin-right: 7px;
-  margin-left: 7px;
+  margin-right: 5px;
+  margin-left: 5px;
   margin-top: 55px;
   margin-bottom: 55px;
   backface-visibility: hidden;
+  border-radius: 12px;
 }
 .container:hover .box {
   transform: rotateY(25deg);

@@ -54,18 +54,18 @@ const Pandas = () => {
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-r from-background to-transparent md:w-[200px] w-[100px] h-full absolute bottom-0"></div>
-            <div className="bg-gradient-to-l from-background to-transparent md:w-[200px] w-[100px] h-full absolute bottom-0 right-0"></div>
+            <div className="bg-gradient-to-r from-background to-transparent w-[100px] h-full absolute bottom-0"></div>
+            <div className="bg-gradient-to-l from-background to-transparent w-[100px] h-full absolute bottom-0 right-0"></div>
           </motion.div>
           <motion.p variants={fadeIn("","",0.7,1)}
           className="mt-4 mb-12 text-text text[17px] max-w-3xl leading-[40px]">
             Miniaturki yt i instagram a takze inne prace graficzne
           </motion.p>
-          <div className="flex ">
+          <motion.div variants={fadeIn("","",1,1)} className="flex">
             {okz.map((photo,index) =>(
             <Okz key={index} {...photo}/>
             ))}
-          </div>
+          </motion.div>
         </div>
       </>
   );

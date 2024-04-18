@@ -7,6 +7,7 @@ import design from "./design.png";//about
 import web_dev from "./web_dev.png";
 import photo from "./photo.png";
 import movie from "./movie.png";
+import dice from "./dice.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -71,6 +72,7 @@ export {
   web_dev,
   photo,
   movie,
+  dice,
   reddit,//webdev
   character_tile,
   cat,//pandas
