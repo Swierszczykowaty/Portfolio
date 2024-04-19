@@ -49,6 +49,19 @@ import lasers from './photos/DSC_5205.jpg';
 import skyscrapers from './photos/DSC_5579.jpg';
 import thunder from './photos/DSC_5245.jpg';
 import fountain from './photos/DSC_2335.jpg';
+import f16 from './photos/DSC_1812.jpg';
+import vitur2 from './photos/DSC_6449.jpg';
+import sunwisla from './photos/a0.jpg'
+import fire from './photos/a1.jpg'
+import fireworks from './photos/a2.jpg'
+import flamingo from './photos/a3.jpg'
+import stars from './photos/a4.jpg'
+import tulip from './photos/a5.jpg'
+import neon from './photos/a6.jpg'
+import mountain from './photos/a7.jpg'
+import cricket from './photos/a8.jpg'
+import a9 from './photos/a9.jpg'
+
 
 export {
   logo,
@@ -96,4 +109,15 @@ export {
   skyscrapers,
   thunder,
   fountain,
+  f16,
+  vitur2,
+  fire,
+  sunwisla,
+  fireworks,
+  flamingo,
+  stars,
+  tulip,
+  neon,
+  mountain,
+  cricket,
 };

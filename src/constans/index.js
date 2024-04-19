@@ -39,6 +39,17 @@ import {
   skyscrapers,
   thunder,
   fountain,
+  f16,
+  vitur2,
+  fire,
+  sunwisla,
+  fireworks,
+  flamingo,
+  stars,
+  tulip,
+  neon,
+  mountain,
+  cricket,
 } from "../assets";
 
 export const navLinks = [
@@ -146,6 +157,7 @@ const okz = [
     photo: dalia,
     title: "Dalia",
   },
+  
   {
     photo: blue,
     title: "Dalia",
@@ -166,45 +178,111 @@ const okz = [
 const photography = [
   {
     photo: plane,
-    title: "F-16",
-    description: "JNKFDANSIAINns afnlsfnsonfsofeesuofnbes jkfuebujnefuoef euffuje fufujesfk nujbsefk ef bjnsefkjnfsejnksekbjnskjnes fbkjn",
-    date:"20-05-20"
+    title: "XtremeAir Sbach 300",
+    description: "Air Show Radom 2023",
+    date:"26-08-23"
   },
   {
     photo: vitur,
     title: "Vitur",
-    description: "design",
-    date:"20-05-20"
+    description: 'Vitur concert in Warsaw',
+    date:"01-07-23"
   },
   {
     photo: butterfly,
-    title: "Graphic Designer",
-    description: "design",
+    title: "Scarce swallowtail",
+    description: "",
     date:"20-05-20"
   },
   {
     photo: lasers,
-    title: "Graphic Designer",
-    description: "design",
-    date:"20-05-20"
+    title: "Laser show",
+    description: "'Piknik Wesoła 2019'",
+    date:"20-05-19"
   },
   {
     photo: skyscrapers,
-    title: "Graphic Designer",
-    description: "design",
-    date:"20-05-20"
+    title: "Warsaw skyscrapers",
+    description: "",
+    date:"01-07-20"
   },
   {
     photo: thunder,
-    title: "Graphic Designer",
-    description: "design",
+    title: "Thunder",
+    description: "",
     date:"20-05-20"
   },
   {
     photo: fountain,
-    title: "Graphic Designer",
-    description: "design",
+    title: "Fountain Park",
+    description: "Multimedia Fountain Park in Warsaw",
     date:"20-05-20"
+  },
+  {
+    photo: f16,
+    title: "Danish Air Force F-16",
+    description: "Air Show Radom 2023",
+    date:"26-08-23"
+  },
+  {
+    photo: vitur2,
+    title: "Vitur",
+    description: 'Vitur concert in Warsaw',
+    date:"01-07-23"
+  },
+  {
+    photo: fire,
+    title: "Street fire show",
+    description: 'Old town in Warsaw',
+    date:"01-07-23"
+  },
+  {
+    photo: sunwisla,
+    title: "Sunset over Warsaw",
+    description: 'on the Vistula River',
+    date:"27-04-21"
+  },
+  {
+    photo: fireworks,
+    title: "New Year's Eve",
+    description: 'Warsaw',
+    date:"01-01-21"
+  },
+  {
+    photo: flamingo,
+    title: "Flamingo",
+    description: 'Warsaw zoo',
+    date:"18-08-20"
+  },
+  {
+    photo: stars,
+    title: "Stars timelaps",
+    description: '919 secons of taking a photo',
+    date:"12-08-20"
+  },
+  {
+    photo: tulip,
+    title: "Tulip",
+    description: '',
+    date:"18-04-20"
+  },
+  {
+    photo: neon,
+    title: "Neon museum in Warsaw",
+    description: '',
+    date:"20-03-20"
+  },
+  {
+    photo: mountain,
+    title: "'Karpaty' mountains in Poland",
+    description: 'view from "Trzy Korony"',
+    date:"18-10-19"
+  },
+  {
+    photo: cricket,
+    title: "Cricket",
+    description: '',
+    date:"19-09-19"
   },
 ];
 
