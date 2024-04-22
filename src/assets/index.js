@@ -41,6 +41,7 @@ import hortensja from './okz/Hortensja.png'
 import dalia from './okz/ig-Dalia.png'
 import paz from './okz/Iphiclides podalirius.png'
 import blue from './okz/niebieskie.png'
+import astry from './okz/Astry.png'
 
 import plane from './photos/DSC_1657.jpg';
 import vitur from './photos/DSC_6387.jpg';
@@ -102,6 +103,7 @@ export {
   blue,
   paz,
   dalia,
+  astry,
   plane,//photography
   vitur,
   butterfly,

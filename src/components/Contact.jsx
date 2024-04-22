@@ -7,11 +7,7 @@ const Contact = () => {
   return (
     <>
       <div>
-        <motion.div variants={textVariant()}>
-          <h2 className={styles.sectionHeadText}>
-            Contact
-          </h2>
-        </motion.div>
+
       </div>
     </>
   );

@@ -32,6 +32,7 @@ import {
   blue,
   paz,
   dalia,
+  astry,
   plane,//photography
   vitur,
   butterfly,
@@ -160,19 +161,19 @@ const okz = [
   
   {
     photo: blue,
-    title: "Dalia",
+    title: "Blue",
+  },
+  {
+    photo: hortensja,
+    title: "Hortensia",
   },
   {
     photo: paz,
-    title: "Dalia",
+    title: "Scarce swallowtail",
   },
   {
-    photo: hortensja,
-    title: "Dalia",
-  },
-  {
-    photo: hortensja,
-    title: "Dalia",
+    photo: astry,
+    title: "Aster",
   },
 ];
 const photography = [

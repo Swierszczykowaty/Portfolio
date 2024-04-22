@@ -1,7 +1,6 @@
 import React,{useEffect, useState} from "react";
 import {styles} from '../styles'
 import {Link} from "react-router-dom";
-//import { NavLinks } from "../constans";
 import {logo, menu, close} from '../assets';
 import { navLinks } from "../constans";
 const Navbar = () => {
@@ -28,7 +27,7 @@ const Navbar = () => {
                 className={`${
                   active === link.title
                   ? "text-white"
-                  : "text-gray-500"
+                  : "text-text"
                 } hover:text-primary2 duration-300 text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
