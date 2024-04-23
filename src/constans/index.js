@@ -1,17 +1,11 @@
 import {
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  threejs,
+  git,//affinity, davici
   design,//icons about
   web_dev,
   photo,
@@ -286,6 +280,19 @@ const photography = [
     date:"19-09-19"
   },
 ];
-
+export const footicons = [
+  {
+    id: "Github",
+    title: "About",
+  },
+  {
+    id: "Web_dev",
+    title: "Work",
+  },
+  {
+    id: "Contact",
+    title: "Contact",
+  },
+];
 
   export { services, web_pages, pandas, okz, photography};
