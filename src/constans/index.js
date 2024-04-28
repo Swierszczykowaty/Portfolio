@@ -5,7 +5,7 @@ import {
   reactjs,
   tailwind,
   nodejs,
-  git,//affinity, davici
+  git,//affinity, davinci
   design,//icons about
   web_dev,
   photo,
@@ -59,6 +59,21 @@ export const navLinks = [
   {
     id: "Contact",
     title: "Contact",
+  },
+];
+
+const company = [
+  {
+    photo: javascript,
+  },
+  {
+    photo: javascript,
+  },
+  {
+    photo: javascript,
+  },
+  {
+    photo: javascript,
   },
 ];
 
@@ -295,4 +310,4 @@ export const footicons = [
   },
 ];
 
-  export { services, web_pages, pandas, okz, photography};
+  export { services, company, web_pages, pandas, okz, photography};

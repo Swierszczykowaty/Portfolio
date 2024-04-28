@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../untils/motion";
 import { SectionWrapper } from "../hoc";
 import { photography } from "../constans";
+
 const getRandomPhotos = (photos, count) => {
   const shuffled = photos.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
