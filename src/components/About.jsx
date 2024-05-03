@@ -45,7 +45,7 @@ const About = () => {
       </motion.div>
       <motion.p variants={fadeIn("","",0.3,1)}
       className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-        Jestem studentem II roku Informatyki. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore aspernatur commodi non aliquid! Adipisci quaerat aliquid iste dicta accusantium aut aperiam obcaecati, iusto asperiores nemo nam impedit, illum in?
+       I am a second-year computer science student. In this portfolio I will show you some of my work in many different area, such as programing, creating graphic and some of my hobbies.
         
       </motion.p>
       <div className="flex flex-wrap xs:gap-20 gap-10 mt-20 justify-center  ">

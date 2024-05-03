@@ -42,8 +42,7 @@ const Web_dev = () => {
           </motion.div>
           <motion.p variants={fadeIn("","",0.3,1)}
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-            Głównym projektem web dev było pndarium, a także frontendowy klon reddita
-          </motion.p>
+              In this section I can present two main projects that I have done. The first is a frontend clone of Reddit's homepage, and the second is an unfinished mini-games page called Pandarium.</motion.p>
           <motion.div variants={fadeIn("","",0.6,1)} className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
           {web_pages.map((photo, index) => (
               <WebBox key={index} {...photo} />

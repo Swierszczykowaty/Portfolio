@@ -100,13 +100,13 @@ const web_pages = [
   {
     photo: reddit,
     title: "Reddit",
-    description: "designdesig ndesigndesigndesigndesignd esi gnde s i gn",
+    description: "It was my own project that was to create a frontend clone of the Reddit homepage. Unfortunately, while I was doing this, the design of the site was changed, so it's only 80% done.",
     link:"https://github.com/Swierszczykowaty/Redit_clon"
   },
   {
     photo: character_tile,
     title: "Pandarium",
-    description: "He's not alone anymore. Joker: Folie à Deux – only in theaters and @IMAX, October 4. #JokerMovie #FilmedForIMAX",
+    description: "The idea was to create a mini-game site to play with friends. I made small components there, such as titles in different changeable variants or other small sections, such as the presentation of our avatar.",
     link:"https://github.com/Swierszczykowaty"
   },
 ];
