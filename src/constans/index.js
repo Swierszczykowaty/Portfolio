@@ -220,7 +220,7 @@ const photography = [
     photo: thunder,
     title: "Thunder",
     description: "",
-    date:"20-05-20"
+    date:"10-08-20"
   },
   {
     photo: fountain,
@@ -244,7 +244,7 @@ const photography = [
     photo: fire,
     title: "Street fire show",
     description: 'Old town in Warsaw',
-    date:"01-07-23"
+    date:"05-06-22"
   },
   {
     photo: sunwisla,
