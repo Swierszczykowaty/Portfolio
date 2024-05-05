@@ -61,19 +61,32 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-
-const company = [
+//in 0% - 75% //
+const companies = [
   {
     photo: javascript,
+    marginLeft: "10%",
+    size: "56",
   },
   {
     photo: javascript,
+    marginLeft: "20%",
+    size: "52",
   },
   {
     photo: javascript,
+    marginLeft: "30%",
+    size: "20",
   },
   {
     photo: javascript,
+    marginLeft: "60%",
+    size: "96",
+  },
+  {
+    photo: javascript,
+    marginLeft: "75%",
+    size: "40",
   },
 ];
 
@@ -310,4 +323,4 @@ export const footicons = [
   },
 ];
 
-  export { services, company, web_pages, pandas, okz, photography};
+  export { services, companies, web_pages, pandas, okz, photography};

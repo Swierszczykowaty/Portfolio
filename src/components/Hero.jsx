@@ -4,6 +4,15 @@ import { styles } from "../styles";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import { fadeIn } from "../untils/motion";
 import { motion } from 'framer-motion';
+import { companies } from "../constans";
+
+const Companylogo = ({index,title,photo,marginLeft, size}) =>{
+  return(
+    <div className={`absolute h-full w-full  left-[${marginLeft}]`}>
+      <img src={photo} alt="logo_company" className={`h-${size} w-${size}`} />
+    </div>
+  );
+};
 
 const Hero = () => {
   
@@ -13,6 +22,9 @@ const Hero = () => {
         <ul className="circles">
         {[...Array(12)].map((_, index) => <li key={index}></li>)}
         </ul>
+        {companies.map((company,index) =>(
+          <Companylogo key={index} index={index} {...company}/>
+        ))}
       </div>
       <div className="flex flex-col">
         <div className= {`${styles.paddingX} justify-center mx-auto context w-full h-2/3 absolute top-1/3 flex flex-row gap-5`}>
