@@ -19,6 +19,8 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import framermotion from "./tech/framermotion.png";
+import davinciresolve from "./tech/davinciresolve.png";
 
 import reddit from "./webdev/reddit.png";
 import character_tile from "./webdev/character_tile.png";
@@ -73,9 +75,11 @@ export {
   mongodb,
   nodejs,
   reactjs,
-   tailwind,
+  tailwind,
   typescript,
   threejs,
+  davinciresolve,
+  framermotion,
   design,//icons about
   web_dev,
   photo,
