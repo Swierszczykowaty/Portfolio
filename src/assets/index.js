@@ -25,6 +25,7 @@ import affiniti from "./tech/affiniti.png";
 import python from "./tech/python.png";
 
 import reddit from "./webdev/reddit.png";
+import pandarium from "./webdev/pandarium.png";
 import character_tile from "./webdev/character_tile.png";
 
 import cat from './pandas/cat-body.png';
@@ -90,6 +91,7 @@ export {
   movie,
   dice,
   reddit,//webdev
+  pandarium,
   character_tile,
   cat,//pandas
   bunny,

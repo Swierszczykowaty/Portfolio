@@ -5,12 +5,13 @@ import {
   reactjs,
   tailwind,
   nodejs,
-  git,//affinity, davinci
+  git,
   design,//icons about
   web_dev,
   photo,
   movie,
   reddit,//webdev
+  pandarium,
   character_tile,
   cat,//pandas
   bunny,
@@ -88,11 +89,12 @@ const web_pages = [
     link:"https://github.com/Swierszczykowaty/Redit_clon"
   },
   {
-    photo: character_tile,
+    photo: pandarium,
     title: "Pandarium",
     description: "The idea was to create a mini-game site to play with friends. I made small components there, such as titles in different changeable variants or other small sections, such as the presentation of our avatar.",
-    link:"https://github.com/Swierszczykowaty"
+    link:"https://github.com/koalarium/pandarium"
   },
+  
 ];
 const pandas = [
   {

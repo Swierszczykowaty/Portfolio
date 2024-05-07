@@ -15,7 +15,7 @@ const styles = {
     WebHeadText:
       "text-white font-black md:text-[50px] sm:text-[40px] text-[30px]",
     WebSubText:
-      "sm:text-[18px] text-[11px] text-text tracking-wider",
+      "md:text-[18px] text-[11px] text-text tracking-wider",
 
   };
   

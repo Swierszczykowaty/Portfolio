@@ -18,13 +18,13 @@ const Hero = () => {
       </div>
       <div className="flex flex-col">
         <div className= {`${styles.paddingX} justify-center mx-auto context w-full h-2/3 absolute top-1/3 flex flex-row gap-5`}>
-          <div className="flex flex-col items-center mt-5">
+          <div className="flex flex-col items-center mt-5  drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
             <div className="w-3 h-3 bg-[#804dee] rounded-full p-3 "></div>
             <div className="w-1 sm:h-96 h-40 violet-gradient"></div>
           </div>
-          <div className="tracking-wider ">
+          <div className="tracking-wider h-fit z-10 drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
             <h1 className= {`${styles.heroHeadText}  text-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}style={{ '--td': '0.8s' }}>
-            <div className="block-reveal" style={{ '--bc': '#EDE34C', '--d': '.1s' }}>
+            <div className="block-reveal " style={{ '--bc': '#EDE34C', '--d': '.1s' }}>
               Hi, I'm <span className="element drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
                 Michał Świercz
                 </span>
@@ -36,6 +36,7 @@ const Hero = () => {
               </div>
             </p>
           </div>
+          {/* <div className="bg-slate-00 absolute z-0 h-28 blur-3xl w-56"></div> */}
           <div className=" absolute bottom-10 flex flex-col items-center cursor-pointe group border-none scroll-box">
             <a href="#about">
               <motion.div className="flex flex-col items-center border-none tracking-wider"

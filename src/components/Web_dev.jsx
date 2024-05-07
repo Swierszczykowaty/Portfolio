@@ -7,9 +7,9 @@ import './Web_dev.scss'
 import { web_pages } from "../constans";
 import {github} from "../assets"
 
-const WebBox = ({ photo, title, description, link}) => {
+const WebBox = ({index, photo, title, description, link}) => {
   return (
-      <>
+      <motion.div variants={fadeIn("right","",0.5+index,1)}>
           <div className="card">
             <div className="cover">
               <img
@@ -27,7 +27,7 @@ const WebBox = ({ photo, title, description, link}) => {
               </div>
             </div>
           </div>
-      </>
+      </motion.div>
   );
 };
 
@@ -43,9 +43,9 @@ const Web_dev = () => {
           <motion.p variants={fadeIn("","",0.3,1)}
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
               In this section I can present two main projects that I have done. The first is a frontend clone of Reddit's homepage, and the second is an unfinished mini-games page called Pandarium.</motion.p>
-          <motion.div variants={fadeIn("","",0.6,1)} className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
+          <motion.div  className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
           {web_pages.map((photo, index) => (
-              <WebBox key={index} {...photo} />
+              <WebBox key={index} index={index} {...photo} />
             ))}
           </motion.div>
         </div>
