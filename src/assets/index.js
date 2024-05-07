@@ -21,6 +21,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import framermotion from "./tech/framermotion.png";
 import davinciresolve from "./tech/davinciresolve.png";
+import affiniti from "./tech/affiniti.png";
+import python from "./tech/python.png";
 
 import reddit from "./webdev/reddit.png";
 import character_tile from "./webdev/character_tile.png";
@@ -80,6 +82,8 @@ export {
   threejs,
   davinciresolve,
   framermotion,
+  affiniti,
+  python,
   design,//icons about
   web_dev,
   photo,
