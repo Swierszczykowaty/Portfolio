@@ -19,7 +19,7 @@ const ServiceCard = ({index,title,icon}) =>{
     transitionSpeed={1500}
     
     className="para">
-      <motion.div 
+      <motion.div variants={fadeIn("","",0,1)}
         className="para min-w-[160px] sm:w-[200px] md:w-[220px]  md:h-auto yellow-purple-gradient p-1 group rounded-2xl shadow-cardd">
         <div className="para bg-[#1B1A32] rounded-xl md:py-5 md:px-12 min-h-[140px] h-[160px] sm:h-[220px] md:h-[280px] flex flex-col items-center justify-evenly duration-300 group-hover:bg-[#141324]">
           <motion.img src={icon} alt={title} className="opacity-0 inn w-10 h-10 sm:w-14 sm:h-14 object-contain " />
@@ -35,7 +35,7 @@ const About = () => {
     <>
     <div className="flex flex-col mb-20">
       {/* h-screen */}
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} >
         <p className={styles.sectionSubText}>
           Introduction
         </p>

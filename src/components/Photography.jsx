@@ -91,9 +91,14 @@ const Photography = () => {
             ))}
           </motion.div>
           <motion.div variants={fadeIn("right","",0.8,1)} className='button_photo'>
-            <button onClick={handleRandomizePhotos} className=' bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10 hover:scale-[1.30] hover:-rotate-[135deg] duration-700 bg-background'>
+            <motion.button
+             whileHover={{ scale: 1.1, rotate: 45 }}
+             whileTap={{ scale: 0.8 }}
+             transition={{ type: "spring", stiffness: 400, damping: 10, duration: 20 }}
+             onClick={handleRandomizePhotos} className=' bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10  bg-background'>
+            {/* hover:scale-[1.30] hover:-rotate-[135deg] duration-700 */}
               <img src="src\assets\dice.svg" alt="dice" className='h-12'/>
-            </button>
+            </motion.button>
           </motion.div>  
         </div>
       </div>
