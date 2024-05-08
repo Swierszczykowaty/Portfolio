@@ -7,15 +7,17 @@ import { fadeIn, textVariant } from "../untils/motion";
 const Contact = () => {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="">
-          <p>Find me:</p>
-        </div>
-        {footicons.map((link) => (
+        <div className="flex flex-col ">
+          <motion.div variants={textVariant()}>
+            <h2 className={styles.sectionHeadText}>
+              Contact
+            </h2>
+          </motion.div>
+        {/* {footicons.map((link) => (
           <div>
 
           </div>
-            ))}
+            ))} */}
 
       </div>
     </>

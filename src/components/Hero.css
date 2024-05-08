@@ -184,18 +184,18 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
-  /* .circles li:nth-child(11){
+  .circles li:nth-child(11){
     left: 90%;
-    width: 35px;
-    height: 35px;
+    width: 105px;
+    height: 105px;
     animation-delay: 18s;
     animation-duration: 31s;
-    background: #858EE6;
-    background-image: url("src/assets/tech/python.png");
+    /* background: #858EE6; */
+    background-image: url("src/assets/tech/sql.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
-  } */
+  }
   @keyframes animate {
     0% {
     transform: rotate(0deg);

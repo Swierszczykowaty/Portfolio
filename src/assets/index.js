@@ -23,6 +23,9 @@ import framermotion from "./tech/framermotion.png";
 import davinciresolve from "./tech/davinciresolve.png";
 import affiniti from "./tech/affiniti.png";
 import python from "./tech/python.png";
+import sql from "./tech/sql.png";
+import cplus from "./tech/cplus.png";
+import csharp from "./tech/csharp.png";
 
 import reddit from "./webdev/reddit.png";
 import pandarium from "./webdev/pandarium.png";
@@ -85,6 +88,9 @@ export {
   framermotion,
   affiniti,
   python,
+  sql,
+  cplus,
+  csharp,
   design,//icons about
   web_dev,
   photo,

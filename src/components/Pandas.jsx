@@ -61,7 +61,7 @@ const Pandas = () => {
           className="mt-4 mb-12 text-text text[17px] max-w-3xl leading-[40px]">
             Miniaturki yt i instagram a takze inne prace graficzne
           </motion.p>
-          <motion.div variants={fadeIn("","",1,1)} className="flex">
+          <motion.div variants={fadeIn("","",1,1)} className=" flex">
             {okz.map((photo,index) =>(
             <Okz key={index} {...photo}/>
             ))}
