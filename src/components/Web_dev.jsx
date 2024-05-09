@@ -9,7 +9,7 @@ import {github} from "../assets"
 
 const WebBox = ({index, photo, title, description, link}) => {
   return (
-      <motion.div variants={fadeIn("right","",0.4+index,1)}>
+      <motion.div variants={fadeIn("right","",0.4+index,0.5)}>
           <div className="card">
             <div className="cover">
               <img

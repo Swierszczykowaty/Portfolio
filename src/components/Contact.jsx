@@ -1,9 +1,12 @@
 import React from "react"
 import { SectionWrapper } from "../hoc";
 import {footicons} from "../constans";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../untils/motion";
+import { render } from "react-dom";
+import { motion, useMotionValue, useSpring } from "framer-motion";
+
+
 const Contact = () => {
   return (
     <>
@@ -13,11 +16,7 @@ const Contact = () => {
               Contact
             </h2>
           </motion.div>
-        {/* {footicons.map((link) => (
-          <div>
-
-          </div>
-            ))} */}
+          
 
       </div>
     </>
