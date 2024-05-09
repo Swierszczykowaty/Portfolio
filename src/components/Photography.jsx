@@ -82,8 +82,7 @@ const Photography = () => {
         </motion.div>
         <motion.p variants={fadeIn("","",0.1,1)}
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A harum placeat inventore dolore dicta praesentium in corporis, necessitatibus iste minus?
-        </motion.p>
+            One of my interests is photography, here are some photos I took, if you want to see more you can click on the dice at the bottom and hover them to see some more details.  </motion.p>
         <div className='flex flex-col items-center'>
           <motion.div variants={fadeIn("right","",0.4,1)} className='container'>
             {photos.map((photo, index) => (
@@ -95,9 +94,9 @@ const Photography = () => {
              whileHover={{ scale: 1.1, rotate: 45 }}
              whileTap={{ scale: 0.8 }}
              transition={{ type: "spring", stiffness: 400, damping: 10, duration: 20 }}
-             onClick={handleRandomizePhotos} className=' bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10  bg-background'>
-            {/* hover:scale-[1.30] hover:-rotate-[135deg] duration-700 */}
-              <img src="src\assets\dice.svg" alt="dice" className='h-12'/>
+             onClick={handleRandomizePhotos} className=' bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10  g-background'>
+            {/* hover:scale-[1.30]  hover:-rotate-[135deg] duration-700 */}
+              <img src="src\assets\dice.svg" alt="dice" className='h-14  '/>
             </motion.button>
           </motion.div>  
         </div>

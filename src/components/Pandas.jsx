@@ -39,7 +39,7 @@ const Pandas = () => {
           </motion.div>
           <motion.p variants={fadeIn("","",0.3,1)}
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-            Robienie Pand svg do pandarium i innyc rzeczy
+            In this section I can show my pandas that were used in the pandarium project and were made in vector graphics. Here are a few of them:
           </motion.p>
           <motion.div variants={fadeIn("","",0.5,1)} class="pb-4 pt-12 overflow-hidden w-full relative">
             <div class="flex flex-row mb-3 md:mb-4 xl:mb-5 ">
@@ -59,8 +59,7 @@ const Pandas = () => {
           </motion.div>
           <motion.p variants={fadeIn("","",0.7,1)}
           className="mt-4 mb-12 text-text text[17px] max-w-3xl leading-[40px]">
-            Miniaturki yt i instagram a takze inne prace graficzne
-          </motion.p>
+            I also create posters for Instagram and thumbnails for YouTube that are garden-themed, here are some of them, you can find more at the links in the footer. </motion.p>
           <motion.div variants={fadeIn("","",1,1)} className=" flex">
             {okz.map((photo,index) =>(
             <Okz key={index} {...photo}/>
