@@ -9,7 +9,7 @@ import {github} from "../assets"
 
 const WebBox = ({index, photo, title, description, link}) => {
   return (
-      <motion.div variants={fadeIn("right","",0.5+index,1)}>
+      <motion.div variants={fadeIn("right","",0.4+index,1)}>
           <div className="card">
             <div className="cover">
               <img
@@ -36,6 +36,9 @@ const Web_dev = () => {
     <>
         <div className="flex flex-col">
           <motion.div variants={textVariant()}>
+              <p className={styles.sectionSubText}>
+                Work
+               </p>    
               <h2 className={styles.sectionHeadText}>
                   Web Designer
               </h2>

@@ -13,7 +13,7 @@ const Hero = () => {
     <div className="relative z-0 overflow-hidden ">
       <div className="area">
         <ul className="circles">
-          {[...Array(12)].map((_, index) => <li key={index}></li>)}
+          {[...Array(14)].map((_, index) => <li key={index}></li>)}
         </ul>
       </div>
       <div className="flex flex-col">
