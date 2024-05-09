@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="tracking-wider h-fit z-10 drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
             <h1 className= {`${styles.heroHeadText}  text-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}style={{ '--td': '0.8s' }}>
             <div className="block-reveal " style={{ '--bc': '#EDE34C', '--d': '.1s' }}>
-              Hi, I'm <span className="element drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+              Hi, I'm <span className="element drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.7)] ">
                 Michał Świercz
                 </span>
               </div>
