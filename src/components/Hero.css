@@ -60,7 +60,7 @@
     height: 80px;
     animation-delay: 10s;
      /* background: #4C1E91;  */
-    background-image: url("src/assets/tech/css.png");
+    background-image: url("/src/assets/tech/css.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
     animation-delay: 0s;
     animation-duration: 38s;
     /* background: #8C38D6; */
-    background-image: url("src/assets/tech/html.png");
+    background-image: url("/src/assets/tech/html.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@
     animation-delay: 5s;
     animation-duration: 18s;
     /* background: #4C1E91; */
-    background-image: url("src/assets/tech/reactjs.png");
+    background-image: url("/src/assets/tech/reactjs.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
     animation-delay: 13s;
     animation-duration: 25s;
     /* background: #4C1E91; */
-    background-image: url("src/assets/tech/tailwind.png");
+    background-image: url("/src/assets/tech/tailwind.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@
     animation-delay: 0s;
     animation-duration: 26s;
     /* background: #4C1E91; */
-    background-image: url("src/assets/tech/javascript.png");
+    background-image: url("/src/assets/tech/javascript.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@
     animation-delay: 14s;
     animation-duration: 15s;
     /* background: #8C38D6; */
-    background-image: url("src/assets/tech/git.png");
+    background-image: url("/src/assets/tech/git.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@
     animation-delay: 11s;
     animation-duration: 32s;
     background: #4C1E91;
-    background-image: url("src/assets/tech/davinciresolve.png");
+    background-image: url("/src/assets/tech/davinciresolve.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@
     animation-delay: 19s;
     animation-duration: 16s;
     /* background: #4C1E91; */
-    background-image: url("src/assets/tech/framermotion.png");
+    background-image: url("/src/assets/tech/framermotion.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -156,7 +156,7 @@
     animation-delay: 8s;
     animation-duration: 28s;
     background: #858EE6; 
-    background-image: url("src/assets/tech/affiniti.png");
+    background-image: url("/src/assets/tech/affiniti.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@
     animation-delay: 2s;
     animation-duration: 22s;
     /* background: #858EE6; */
-    background-image: url("src/assets/tech/python.png");
+    background-image: url("/src/assets/tech/python.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@
     animation-delay: 17s;
     animation-duration: 35s;
     /* background: #8C38D6; */
-    background-image: url("src/assets/tech/typescript.png");
+    background-image: url("/src/assets/tech/typescript.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -193,7 +193,7 @@
     animation-delay: 18s;
     animation-duration: 31s;
     /* background: #858EE6; */ 
-    background-image: url("src/assets/tech/sql.png");
+    background-image: url("/src/assets/tech/sql.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -205,7 +205,7 @@
     animation-delay: 12s;
     animation-duration: 41s;
     /* background: #858EE6; */ 
-    background-image: url("src/assets/tech/cplus.png");
+    background-image: url("/src/assets/tech/cplus.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@
     animation-delay: 6s;
     animation-duration: 20s;
     /* background: #858EE6; */ 
-    background-image: url("src/assets/tech/csharp.png");
+    background-image: url("/src/assets/tech/csharp.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;

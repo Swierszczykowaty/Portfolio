@@ -31,7 +31,7 @@ html {
   height: 102%;
   /* background-image: url('src/assets/webdev/character_tile.png'); */
   background: linear-gradient(#121422, #1214222a, #121422),
-              url('src/assets/webdev/character_tile.png');
+              url('/src/assets/webdev/character_tile.png');
   filter: blur(2px); 
 }
 .photobox{

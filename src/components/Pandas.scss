@@ -25,7 +25,7 @@
     width: 300px;
     border-radius: 10px;
     box-shadow: -16px 0 48px #000000;
-    transition: 0.4s ease-out;
+    transition: 0.3s ease-out;
     position: relative;
     left: 0px;
   }
@@ -42,13 +42,13 @@
   
   .cardokz:hover {
     transform: translateY(-20px);
-    transition: 0.4s ease-out;
+    transition: 0.3s ease-out;
   }
   
   .cardokz:hover ~ .cardokz {
     position: relative;
     left: 50px;
-    transition: 0.4s ease-out;
+    transition: 0.3s ease-out;
   }
   .imageokz{
     object-fit: cover;

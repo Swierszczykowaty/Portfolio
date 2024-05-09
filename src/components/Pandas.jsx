@@ -10,7 +10,7 @@ const Okz =({title, photo}) => {
   return(
     <>
       <div className="cardokz ">
-          <img src={photo} alt="okz" className="imageokz rounded-xl duration-700 border-4 border-text" />
+          <img src={photo} alt="okz" className="imageokz rounded-xl duration-500 border-4 border-text" />
       </div>
     </>
   );
@@ -20,8 +20,8 @@ const Pandaslide = ({title, body, color}) => {
   return(
     <div className="group relative">
       <div className="w-40 mr-4 relative pandash rounded-3xl overflow-hidden ">
-        <div className=" w-full h-full rounded-full absolute scale-50 opacity-80 group-hover:scale-150 duration-700 " style={{ backgroundColor: color }}></div>
-        <img src={body} alt="panda" className="shrink-0 object-cover group-hover:scale-[1.15] duration-700 pandas" />
+        <div className=" w-full h-full rounded-full absolute scale-50 opacity-80 group-hover:scale-150 duration-300 " style={{ backgroundColor: color }}></div>
+        <img src={body} alt="panda" className="shrink-0 object-cover group-hover:scale-[1.15] duration-500 pandas" />
       </div>
       {/* <p className="flex mr-4 justify-center mt-3 text-xl group-hover:scale-100 scale-75 group-hover:opacity-100 opacity-0 duration-700 text-text ">{title}</p> */}
     </div>
