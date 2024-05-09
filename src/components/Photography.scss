@@ -136,3 +136,12 @@
   transform: translateY(-400px);
   transition-delay: 0.1s;
 }
+
+.photobutton{
+  width: 65px;
+  height: 65px;
+  background-image: url("/src/assets/dice.png");
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

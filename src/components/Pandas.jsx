@@ -60,7 +60,7 @@ const Pandas = () => {
           <motion.p variants={fadeIn("","",0.7,1)}
           className="mt-4 mb-12 text-text text[17px] max-w-3xl leading-[40px]">
             I also create posters for Instagram and thumbnails for YouTube that are garden-themed, here are some of them, you can find more at the links in the footer. </motion.p>
-          <motion.div variants={fadeIn("","",1,1)} className=" flex">
+          <motion.div variants={fadeIn("up","",1.2,1)} className=" flex">
             {okz.map((photo,index) =>(
             <Okz key={index} {...photo}/>
             ))}
