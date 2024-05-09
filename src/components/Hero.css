@@ -131,7 +131,7 @@
     animation-delay: 11s;
     animation-duration: 32s;
     background: #4C1E91;
-    background-image: url("src/assets/tech/davinciresolve.png");
+    background-image: url("/src/assets/tech/davinciresolve.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -143,7 +143,7 @@
     animation-delay: 19s;
     animation-duration: 16s;
     /* background: #4C1E91; */
-    background-image: url("src/assets/tech/framermotion.png");
+    background-image: url("/src/assets/tech/framermotion.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -155,7 +155,7 @@
     animation-delay: 8s;
     animation-duration: 28s;
     background: #858EE6; 
-    background-image: url("src/assets/tech/affiniti.png");
+    background-image: url("/src/assets/tech/affiniti.png");
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
