@@ -7,21 +7,15 @@
   transform-style: preserve-3d;
 }
 .inn {
-  color: transparent;
-  animation: fadeInColor2 3s forwards; 
-  animation-delay: 1s;
-  pointer-events: none;
-
+  transform: translateZ(70px);
 }
 
 
 @keyframes fadeInColor2 {
   0% {
       opacity: 0; 
-      transform: translateZ(0);
   }
   100% {
       opacity: 1; 
-      transform: translateZ(70px);
   }
 }
