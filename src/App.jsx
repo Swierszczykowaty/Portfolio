@@ -36,9 +36,9 @@ const App = () => {
         {/* <Design/> */}
         {/* <Movies/>
         <Blend/>*/}
-        <div className="bg-background rounded-t-3xl">
+        {/* <div className="bg-background rounded-t-3xl">
           <Contact/> 
-        </div>
+        </div> */}
       </div>
     </BrowserRouter>
   )
