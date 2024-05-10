@@ -162,10 +162,10 @@ const okz = [
     photo: hortensja,
     title: "Hortensia",
   },
-  {
-    photo: paz,
-    title: "Scarce swallowtail",
-  },
+  // {
+  //   photo: paz,
+  //   title: "Scarce swallowtail",
+  // },
   {
     photo: astry,
     title: "Aster",

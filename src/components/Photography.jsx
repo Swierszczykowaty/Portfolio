@@ -89,12 +89,14 @@ const Photography = () => {
               <PhotoBox key={index} {...photo} />
             ))}
           </motion.div>
-          <motion.div variants={fadeIn("down","",0.8,1)} className='button_photo'>
+          <motion.div variants={fadeIn("down","",0.8,1)}
+          onClick={handleRandomizePhotos}
+          className='button_photo'>
             <motion.div
              whileHover={{ scale: 1.1, rotate: 45 }}
-             whileTap={{ scale: 0.8 }}
+             whileTap={{ scale: 0.8, rotate: 10 }}
              transition={{ type: "spring", stiffness: 400, damping: 10, duration: 20 }}
-             onClick={handleRandomizePhotos} className='photobutton cursor-pointer bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10  g-background'>
+             className='photobutton cursor-pointer bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10  g-background'>
             {/* hover:scale-[1.30]  hover:-rotate-[135deg] duration-700 */}
               {/* <img src="/src/assets/dice.png" alt="dice" className='h-14'/> */}
             </motion.div>
