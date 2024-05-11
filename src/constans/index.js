@@ -63,7 +63,7 @@ export const navLinks = [
   },
   {
     id: "Photography",
-    title: "Photo",
+    title: "Photography",
   },
   // {
   //   id: "Contact",
