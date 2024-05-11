@@ -14,6 +14,7 @@ import Design from "./components/Design";
 import Movies from "./components/Movie";
 import Blend from "./components/Blend";
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -36,9 +37,9 @@ const App = () => {
         {/* <Design/> */}
         {/* <Movies/>
         <Blend/>*/}
-        {/* <div className="bg-background rounded-t-3xl">
+        <div className="bg-background rounded-t-[50px]">
           <Contact/> 
-        </div> */}
+        </div>
       </div>
     </BrowserRouter>
   )

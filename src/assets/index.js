@@ -1,7 +1,12 @@
 import logo from "./logo.svg";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+
+import github from "./github.png";
+import insta from "./instagram.png";
+import yt from "./youtube.png";
+import linkedin from "./linkedin.png";
+import gmail from "./gmail.png";
 
 import design from "./design.png";//about
 import web_dev from "./web_dev.png";
@@ -72,6 +77,10 @@ import a9 from './photos/a9.jpg'
 export {
   logo,
   github,
+  insta,
+  yt,
+  linkedin,
+  gmail,
   menu,
   close,
   css,

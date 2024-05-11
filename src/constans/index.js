@@ -51,16 +51,24 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Overview",
   },
   {
     id: "Web_dev",
-    title: "Work",
+    title: "Web",
   },
   {
-    id: "Contact",
-    title: "Contact",
+    id: "Pandas",
+    title: "Graphic",
   },
+  {
+    id: "Photography",
+    title: "Photo",
+  },
+  // {
+  //   id: "Contact",
+  //   title: "Contact",
+  // },
 ];
 const services = [
   {
@@ -162,10 +170,10 @@ const okz = [
     photo: hortensja,
     title: "Hortensia",
   },
-  {
-    photo: paz,
-    title: "Scarce swallowtail",
-  },
+  // {
+  //   photo: paz,
+  //   title: "Scarce swallowtail",
+  // },
   {
     photo: astry,
     title: "Aster",
