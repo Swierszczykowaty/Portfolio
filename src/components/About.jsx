@@ -17,7 +17,6 @@ const ServiceCard = ({index,title,icon}) =>{
     glareBorderRadius="16px"
     glareColor="#8569a7"
     transitionSpeed={1500}
-    
     className="para">
       <motion.div 
         className="para min-w-[160px] sm:w-[200px] md:w-[220px]  md:h-auto yellow-purple-gradient p-1 group rounded-2xl shadow-cardd">

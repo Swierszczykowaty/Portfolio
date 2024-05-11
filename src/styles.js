@@ -16,6 +16,8 @@ const styles = {
       "text-white font-black md:text-[50px] sm:text-[40px] text-[30px]",
     WebSubText:
       "md:text-[18px] text-[11px] text-text tracking-wider",
+    FooterText:
+      "md:text-[17px] text-[14px] text-text tracking-wider",
 
   };
   

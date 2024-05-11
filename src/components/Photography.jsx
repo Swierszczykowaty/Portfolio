@@ -72,6 +72,8 @@ const Photography = () => {
   };
 
 
+  
+
   return (
     <>
       <div className="flex flex-col ite">
@@ -89,16 +91,27 @@ const Photography = () => {
               <PhotoBox key={index} {...photo} />
             ))}
           </motion.div>
-          <motion.div variants={fadeIn("down","",0.8,1)}
+          <motion.div
+           animate={{
+            scale: [1, 1.3, 1.3, 1.3, 1],
+            rotate: [0, 0, 405, 0, 0],
+          }}
+          transition={{
+          delay:3,
+           duration: 2,
+           ease: "easeInOut",
+           times: [0, 0.2, 0.5, 0.8, 1],
+           repeat: Infinity,
+           repeatDelay: 4,
+          }}
+          variants={fadeIn("down","",0.8,1)}
           onClick={handleRandomizePhotos}
           className='button_photo'>
             <motion.div
-             whileHover={{ scale: 1.1, rotate: 45 }}
-             whileTap={{ scale: 0.8, rotate: 10 }}
-             transition={{ type: "spring", stiffness: 400, damping: 10, duration: 20 }}
-             className='photobutton cursor-pointer bg-slate-80 p-2 mt-4 mb-10 sm:mb-0 flex items-center justify-center rounded-xl z-10  g-background'>
-            {/* hover:scale-[1.30]  hover:-rotate-[135deg] duration-700 */}
-              {/* <img src="/src/assets/dice.png" alt="dice" className='h-14'/> */}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8, rotate: 20 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className='photobutton cursor-pointer bg-slate-80 p-2 flex items-center justify-center rounded-xl z-10  g-background'>
             </motion.div>
           </motion.div>  
         </div>
@@ -107,4 +120,4 @@ const Photography = () => {
   );
 };
 
-export default SectionWrapper(Photography, "photography");
+export default SectionWrapper(Photography, "Photography");
