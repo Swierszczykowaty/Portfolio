@@ -12,7 +12,7 @@ import Web_dev from "./components/Web_dev";
 import Pandas from "./components/Pandas";
 import Design from "./components/Design";
 import Movies from "./components/Movie";
-import Blend from "./components/Blend";
+import Tech from "./components/Tech";
 
 
 const App = () => {
@@ -35,8 +35,8 @@ const App = () => {
           <Photography/>
         </div>
         {/* <Design/> */}
-        {/* <Movies/>
-        <Blend/>*/}
+        {/* <Movies/> */}
+        <Tech/>
         <div className="bg-background rounded-t-[50px]">
           <Contact/> 
         </div>
