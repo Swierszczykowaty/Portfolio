@@ -17,6 +17,7 @@ export default {
         'seconary': '#4c1e91',
         'accent': '#8c38d6',
         'primary2': '#EDE34C',
+        'orange1': `#123412`,
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

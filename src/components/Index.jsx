@@ -39,7 +39,7 @@ const Index = () => {
         </div>
         {/* <Design/> */}
         {/* <Movies/> */}
-        {/* <Tech/> */}
+        <Tech/>
         <div className="bg-background rounded-t-[50px]">
           <Contact/> 
         </div>

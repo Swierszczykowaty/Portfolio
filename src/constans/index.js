@@ -108,8 +108,8 @@ const tech = [
     title: "CSS",
     icon: css,
     color1:"#123412",
-    color2:"#fff",
-    color3:"#123412",
+    color2:"orange1",
+    color3:"slate-800",
   },
   {
     title: "HTML",
@@ -125,6 +125,38 @@ const tech = [
     color1:"#0000ff",
     color2:"#0020ff",
     color3:"#fff",
+
+  },
+  {
+    title: "css",
+    icon: css,
+    color1:"#fff",
+    color2:"#123412",
+    color3:"#123412",
+
+  },
+  {
+    title: "css",
+    icon: css,
+    color1:"#fff",
+    color2:"#123412",
+    color3:"#123412",
+
+  },
+  {
+    title: "css",
+    icon: css,
+    color1:"#fff",
+    color2:"#123412",
+    color3:"#123412",
+
+  },
+  {
+    title: "css",
+    icon: css,
+    color1:"#fff",
+    color2:"#123412",
+    color3:"#123412",
 
   },
   {
