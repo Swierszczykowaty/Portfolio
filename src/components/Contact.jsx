@@ -34,7 +34,7 @@ const Contact = () => {
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
                 type: "spring",
-                damping: 5,
+                damping: 7,
                 stiffness: 100,
                 restDelta: 0.001
               }
@@ -66,7 +66,7 @@ const Contact = () => {
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
                 type: "spring",
-                damping: 5,
+                damping: 7,
                 stiffness: 100,
                 restDelta: 0.001
               }
@@ -98,7 +98,7 @@ const Contact = () => {
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
                 type: "spring",
-                damping: 5,
+                damping: 7,
                 stiffness: 100,
                 restDelta: 0.001
               }
@@ -148,7 +148,7 @@ const Contact = () => {
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
                 type: "spring",
-                damping: 5,
+                damping: 7,
                 stiffness: 100,
                 restDelta: 0.001
               }
@@ -180,14 +180,14 @@ const Contact = () => {
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
                 type: "spring",
-                damping: 5,
+                damping: 7,
                 stiffness: 100,
                 restDelta: 0.001
               }
             }}
           className="flex flex-col justify-center items-center">
             <p className={`${styles.FooterText} mb-4  xl:w-44 hidden md:flex justify-center`}>More contact</p> 
-            <a draggable="false" onClick={copyEmailToClipboard}>
+            <div draggable="false" onClick={copyEmailToClipboard}>
               <motion.img
                animate={{
                   scale: [1, 1.3, 1],
@@ -202,7 +202,7 @@ const Contact = () => {
                 repeatDelay: 3,
                 }}
               src={gmail} alt="git" className="cursor-pointer object-contain h-6 w-6 xs:h-8 xs:w-8 "/>
-            </a>
+            </div>
           </motion.div>
         </motion.div>
         <motion.div
