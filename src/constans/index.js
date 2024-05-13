@@ -102,8 +102,42 @@ const web_pages = [
     description: "The idea was to create a mini-game site to play with friends. I made small components there, such as titles in different changeable variants or other small sections, such as the presentation of our avatar.",
     link:"https://github.com/koalarium/pandarium"
   },
-  
 ];
+const tech = [
+  {
+    title: "CSS",
+    icon: css,
+    color1:"#123412",
+    color2:"#fff",
+    color3:"#123412",
+  },
+  {
+    title: "HTML",
+    icon: html,
+    color1:"#fff",
+    color2:"#123412",
+    color3:"#123412",
+
+  },
+  {
+    title: "ReactJs",
+    icon: reactjs,
+    color1:"#0000ff",
+    color2:"#0020ff",
+    color3:"#fff",
+
+  },
+  {
+    title: "css",
+    icon: css,
+    color1:"#fff",
+    color2:"#123412",
+    color3:"#123412",
+
+  },
+
+];
+
 const pandas = [
   {
     title: "Bunny",
@@ -304,4 +338,4 @@ export const footicons = [
   },
 ];
 
-  export { services, web_pages, pandas, okz, photography};
+  export { services, web_pages,tech,pandas, okz, photography};
