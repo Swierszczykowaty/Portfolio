@@ -9,7 +9,7 @@ import {github} from "../assets"
 
 const WebBox = ({index, photo, title, description, link}) => {
   return (
-      <motion.div variants={fadeIn("right","",0.4+index,0.5)}>
+      <motion.div variants={fadeIn("right","",0.4+(index*0.3),0.9)}>
           <div className="card">
             <div className="cover">
               <img
@@ -45,7 +45,7 @@ const Web_dev = () => {
           </motion.div>
           <motion.p variants={fadeIn("","",0.3,1)}
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
-              In this section I can present two main projects that I have done. The first is a frontend clone of Reddit's homepage, and the second is an unfinished mini-games page called Pandarium.</motion.p>
+              In this section I can present a few website projects that I have done recently. In the project descriptions there are links to the code on Github, also in the published projects there are links to the pages.</motion.p>
           <motion.div  className='flex flex-wrap justify-center items-center gap-10 mt-10 mb-10'>
           {web_pages.map((photo, index) => (
               <WebBox key={index} index={index} {...photo} />

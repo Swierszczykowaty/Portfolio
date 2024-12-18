@@ -6,12 +6,12 @@ import { fadeIn, textVariant } from "../untils/motion";
 import { pandas, okz } from "../constans";
 import './Pandas.scss';
 
-const Okz =({title, photo}) => {
+const Okz =({title, photo, index}) => {
   return(
     <>
-      <div className="cardokz ">
+      <motion.div variants={fadeIn("up","",0.4+(index*0.2),1)} className="cardokz ">
           <img src={photo} alt="okz" className="imageokz rounded-xl duration-500 border-4 border-text" />
-      </div>
+      </motion.div>
     </>
   );
 };
@@ -60,9 +60,9 @@ const Pandas = () => {
           <motion.p variants={fadeIn("","",0.7,1)}
           className="mt-4 mb-12 text-text text[17px] max-w-3xl leading-[40px]">
             I also create posters for Instagram and thumbnails for YouTube that are garden-themed, here are some of them, you can find more at the links in the footer. </motion.p>
-          <motion.div variants={fadeIn("up","",1.2,1)} className=" flex justify-center">
+          <motion.div  className=" flex justify-center">
             {okz.map((photo,index) =>(
-            <Okz key={index} {...photo}/>
+            <Okz key={index} index={index} {...photo}/>
             ))}
           </motion.div>
         </div>

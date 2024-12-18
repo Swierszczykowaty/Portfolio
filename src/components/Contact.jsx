@@ -21,6 +21,7 @@ const Contact = () => {
 
     alert('Email copied to clipboard');
   };
+  const getCurrentYear = () => new Date().getFullYear();
 
   return (
     <>
@@ -28,7 +29,7 @@ const Contact = () => {
         <motion.div className="w-full flex justify-between items-center max-w-7xl mx-auto my-4 md:my-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
               ease: [0, 0.71, 0.2, 1.01],
@@ -39,7 +40,7 @@ const Contact = () => {
                 restDelta: 0.001
               }
             }}
-            className="flex flex-col justify-center items-center ">
+            className="flex flex-col justify-center items-center">
             <p className={`${styles.FooterText} mb-4  xl:w-44 hidden md:flex justify-center`}>More code</p> 
             <a href="https://github.com/Swierszczykowaty" target="_blank" rel="noopener noreferrer" draggable="false">
               <motion.img
@@ -60,7 +61,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ delay: 2, opacity: 1, scale: 1 }}
+            animate={{ delay: 2, opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
               ease: [0, 0.71, 0.2, 1.01],
@@ -92,7 +93,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
               ease: [0, 0.71, 0.2, 1.01],
@@ -142,7 +143,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+           animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
               ease: [0, 0.71, 0.2, 1.01],
@@ -174,7 +175,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
               ease: [0, 0.71, 0.2, 1.01],
@@ -207,20 +208,20 @@ const Contact = () => {
         </motion.div>
         <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
             }}
         className="h-[1px] my-4 md:my-10 rounded-xl w-[75%] md:w-[60%] mx-auto bg-primary2"></motion.div>
         <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
             }}
         className={`${styles.FooterText} mt-4 mb-2 md:mt-6 md:mb-10`}>
-          @2024 Michał Świercz, All rights reserved.
-        </motion.div>
+          @{getCurrentYear()} Michał Świercz, All rights reserved.
+          </motion.div>
       </div>
     </>
   );

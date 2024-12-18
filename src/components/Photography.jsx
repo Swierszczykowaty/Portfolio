@@ -31,7 +31,6 @@ const PhotoBox = ({ photo, title, description, date }) => {
       <div className='content2'>
         <p>{date}</p>
       </div>
-
     </div>
   );
 };
@@ -86,15 +85,14 @@ const Photography = () => {
           className="mt-4 text-text text[17px] max-w-3xl leading-[40px]">
             One of my interests is photography, here are some photos I took, if you want to see more you can click on the dice at the bottom and hover them to see some more details.  </motion.p>
         <div className='flex flex-col items-center'>
-          <motion.div variants={fadeIn("right","",0.4,1)} className='z-10 container'>
+          <motion.div variants={fadeIn("up","",0.4,1)} className='z-10 container'>
             {photos.map((photo, index) => (
               <PhotoBox key={index} {...photo} />
             ))}
           </motion.div>
           <motion.div
            animate={{
-            scale: [1, 1.3, 1.3, 1.3, 1],
-            rotate: [0, 0, 405, 0, 0],
+            rotate: [0, 0, 190, 0, 0],
           }}
           transition={{
           delay:3,

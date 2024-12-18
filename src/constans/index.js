@@ -12,6 +12,8 @@ import {
   movie,
   reddit,//webdev
   pandarium,
+  surella,
+  karina,
   character_tile,
   cat,//pandas
   bunny,
@@ -91,6 +93,18 @@ const services = [
 
 const web_pages = [
   {
+    photo: surella,
+    title: "Surella",
+    description: "A one-page website created with my friend for a company that installs blinds, curtains and shutters. The website was created in React Vite + tailwidn.css",
+    link:"https://github.com/Hosuqa/Surella"
+  },
+  {
+    photo: karina,
+    title: "Karina portfolio",
+    description: "A photography portfolio website where the goal was to create a minimalistic and monochromatic site. This is my first project written using Next.js 15, as well as using the Gsap framework.",
+    link:"https://github.com/Swierszczykowaty/Portfolio_Szymanska"
+  },
+  {
     photo: reddit,
     title: "Reddit",
     description: "It was my own project that was to create a frontend clone of the Reddit homepage. Unfortunately, while I was doing this, the design of the site was changed, so it's only 80% done.",
@@ -101,7 +115,7 @@ const web_pages = [
     title: "Pandarium",
     description: "The idea was to create a mini-game site to play with friends. I made small components there, such as titles in different changeable variants or other small sections, such as the presentation of our avatar.",
     link:"https://github.com/koalarium/pandarium"
-  },
+  }
 ];
 const tech = [
   {

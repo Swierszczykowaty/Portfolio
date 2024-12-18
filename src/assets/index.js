@@ -34,6 +34,8 @@ import csharp from "./tech/csharp.png";
 
 import reddit from "./webdev/reddit.png";
 import pandarium from "./webdev/pandarium.png";
+import surella from "./webdev/surella.png";
+import karina from "./webdev/karina.png";
 import character_tile from "./webdev/character_tile.png";
 
 import cat from './pandas/cat-body.png';
@@ -107,6 +109,8 @@ export {
   dice,
   reddit,//webdev
   pandarium,
+  surella,
+  karina,
   character_tile,
   cat,//pandas
   bunny,
