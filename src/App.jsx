@@ -18,6 +18,7 @@ import Movies from "./components/Movie";
 import Tech from "./components/Tech";
 import Page404 from "./components/Page404";
 import Index from "./components/Index.jsx";
+import EscapeFromWawer from "./components/EscapeFromWawer";
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/Escape_from_wawer" element={<EscapeFromWawer />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
     </BrowserRouter>
